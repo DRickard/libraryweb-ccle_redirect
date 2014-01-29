@@ -1,0 +1,52 @@
+<?php
+
+function ccle_menu() {
+    $items = array();
+    $items['ccle'] = array(
+        'title' => 'Hello CCLE',
+        'page callback' => 'get_ccle',
+        'page arguments' => array(1),
+        'access arguments' => array('access content'),
+        'type' => MENU_NORMAL_ITEM,
+     );
+    return $items;
+}
+
+function get_ccle($myarg) {
+
+ $myvar = $_GET['var1'];
+ $first = $_POST["first"];
+ $last = $_POST["last"];
+
+ $form['#action'] = '/ccle?var1=classroom1';
+
+ $form['description'] = array(
+ '#type' => 'item',
+ '#title' => '===>'.$myvar.' ===>'.$first.' ===>'.$last,
+ );
+
+ $form['name'] = array(
+ '#type' => 'fieldset',
+ '#title' => t('Name'),
+ );
+ $form['name']['first'] = array(
+ '#type' => 'textfield',
+ '#title' => t('First name'),
+ );
+ $form['name']['last'] = array(
+ '#type' => 'textfield',
+ '#title' => t('Last name'),
+ );
+
+
+ $form['submit'] = array(
+ '#type' => 'submit',
+ '#value' => 'Submit',
+ );
+
+$mymsg =  '===>'.$myvar.' ===>'.$first.' ===>'.$last;
+
+return $mymsg;
+
+ }
+

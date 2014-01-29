@@ -1,0 +1,27 @@
+<?php
+
+function ccle_redirect_menu() {
+    $items = array();
+    $items['ccle_redirect'] = array(
+        'title' => 'CCLE Request Parameters',
+        'page callback' => 'get_ccle',
+        'page arguments' => array(1),
+        'access arguments' => array('access content'),
+        'type' => MENU_NORMAL_ITEM,
+     );
+    return $items;
+}
+
+
+function get_ccle($myarg) {
+
+ $myvar = $_GET['var1'];
+ $first = $_POST["first"];
+ $last = $_POST["last"];
+
+ $mymsg =  'HTTP Query String Parameter ===>'.$myvar.'<br><br>HTTP POST Variable: DEPT ===>'.$first.'<br><br>HTTP POST Variable: CLASS ===>'.$last.'<br><br>SQL Query: ===>';
+
+ return $mymsg;
+
+}
+
