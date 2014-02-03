@@ -16,10 +16,16 @@ function ccle_redirect_menu() {
 function get_ccle($myarg) {
 
  $myvar = $_GET['var1'];
- $first = $_POST["first"];
- $last = $_POST["last"];
+ $term = $_POST["term"];
+ $subj_area = $_POST["subj_area"];
+ $crsidx = $_POST["crsidx"];
+ $classidx = $_POST["classidx"];
 
- $mymsg =  'HTTP Query String Parameter ===>'.$myvar.'<br><br>HTTP POST Variable: DEPT ===>'.$first.'<br><br>HTTP POST Variable: CLASS ===>'.$last.'<br><br>SQL Query: ===>';
+ $mymsg =  'HTTP Query String Parameter ===>'.$myvar.'<br><br>HTTP POST Variable: term ===>'.$term.'<br><br>
+ HTTP POST Variable: subj_area ===>'.$subj_area.'<br><br>
+ HTTP POST Variable: crsidx ===>'.$crsidx.'<br><br>
+ HTTP POST Variable: classidx ===>'.$classidx.'<br><br>
+ SQL Query: ===>';
 
  return $mymsg;
 
