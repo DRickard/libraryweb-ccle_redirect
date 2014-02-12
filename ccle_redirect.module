@@ -4,7 +4,7 @@ function ccle_redirect_menu() {
     $items = array();
     $items['ccle_redirect'] = array(
         'title' => 'CCLE Request Parameters',
-        'page callback' => 'get_ccle',
+        'page callback' => 'ccle_redirect_list',
         'page arguments' => array(1),
         'access arguments' => array('access content'),
         'type' => MENU_NORMAL_ITEM,
@@ -12,22 +12,41 @@ function ccle_redirect_menu() {
     return $items;
 }
 
+function ccle_redirect_list() {
+  $output = '';
 
-function get_ccle($myarg) {
-
- $myvar = $_GET['var1'];
- $term = $_POST["term"];
- $subj_area = $_POST["subj_area"];
- $crsidx = $_POST["crsidx"];
- $classidx = $_POST["classidx"];
-
- $mymsg =  'HTTP Query String Parameter ===>'.$myvar.'<br><br>HTTP POST Variable: term ===>'.$term.'<br><br>
- HTTP POST Variable: subj_area ===>'.$subj_area.'<br><br>
- HTTP POST Variable: crsidx ===>'.$crsidx.'<br><br>
- HTTP POST Variable: classidx ===>'.$classidx.'<br><br>
- SQL Query: ===>';
-
- return $mymsg;
-
+  // Get all entries in the rc_res_rules table.
+  if ($entries = ccle_redirect_entry_load()) {
+    $rows = array();
+    foreach ($entries as $entry) {
+      // Sanitize the data before handing it off to the theme layer.
+      $rows[] = array_map('check_plain', (array) $entry);
+    }
+    // Make a table for them.
+    $header = array(t('Pid'), t('term'), t('subj_area'), t('crsidx'), t('classidx'), t('lib_guide'));
+    $output .= theme('table', array('header' => $header, 'rows' => $rows));
+  }
+  else {
+    drupal_set_message(t('No entries have been added yet.'));
+  }
+  return $output;
 }
 
+
+/**
+ * Read from the database using a filter array.
+ *
+ */
+function ccle_redirect_entry_load($entry = array()) {
+  // Read all fields from the rc_res_rules table.
+  $select = db_select('ccle_redirect', 'example');
+//  $select->condition('user_group', 'Graduate');
+  $select->fields('example');
+
+  // Add each field and value as a condition to this query.
+  foreach ($entry as $field => $value) {
+    $select->condition($field, $value);
+  }
+  // Return the result in object format.
+  return $select->execute()->fetchAll();
+}

@@ -1,0 +1,170 @@
+<?php	
+/**
+ * @file
+ * Install, update and uninstall functions for the ccle_redirect module.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * In Drupal 7, there is no need to install schema using this hook, the schema
+ * is already installed before this hook is called.
+ *
+ * We will create a default entry in the database.
+ *
+ * @see hook_install()
+ * @ingroup ccle
+ */
+function ccle_redirect_install() {
+  // Outside of the .install file we would use drupal_write_record() to
+  // populate the database, but it cannot be used here, so we'll use
+  // db_insert().
+
+  $fields = array(
+    'term'    => '13W',
+    'subj_area' => 'ENGCOMP',
+    'crsidx'     => '0003    ',
+    'classidx'     => ' 022  ',
+    'lib_guide'     => '1,',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+  $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'AN N EA',
+    'crsidx'     => '0010W   ',
+    'classidx'     => ' 001  ',
+    'lib_guide'     => '2,',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+  $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ASTR',
+    'crsidx'     => '0297  M ',
+    'classidx'     => ' 001  ',
+    'lib_guide'     => '3,4,',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+  $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'PHYSICS',
+    'crsidx'     => '0297  M ',
+    'classidx'     => ' 001  ',
+    'lib_guide'     => '3,4,',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+  $fields = array(
+    'term'    => '13F',
+    'subj_area' => 'ASIAN',
+    'crsidx'     => '0060W M ',
+    'classidx'     => ' 001  ',
+    'lib_guide'     => '5,',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+    
+  $fields = array(
+    'term'    => '13F',
+    'subj_area' => 'RELIGN',
+    'crsidx'     => '0060W M ',
+    'classidx'     => ' 001  ',
+    'lib_guide'     => '5,',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+    
+}
+
+/**
+ * Implements hook_uninstall().
+ *
+ * As in hook_install, there is no need to uninstall schema, Drupal will do it
+ * for us.
+ *
+ * @see hook_uninstall()
+ * @ingroup ccle
+ */
+function ccle_redirect_uninstall() {
+  // nothing.
+}
+
+
+/**
+ * Implements hook_schema().
+ *
+ * Defines the database tables used by this module.
+ * Remember that the easiest way to create the code for hook_schema is with
+ * the @link http://drupal.org/project/schema schema module @endlink
+ *
+ * @see hook_schema()
+ * @ingroup ccle
+ */
+function ccle_redirect_schema() {
+
+  $schema['ccle_redirect'] = array(
+    'description' => 'Stores business rules for resource allocation of the Research Commons.',
+    'fields' => array(
+      'pid'  => array(
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique rule ID.',
+      ),
+      'term' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => "Term during which CCLE-LibGuide link is valid",
+      ),
+      'subj_area' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Subject area or Department of class',
+      ),
+      'crsidx' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Course index number',
+      ),
+      'classidx' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Class index number',
+      ),
+      'lib_guide' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'LibGuide that matches the submitted course',
+      ),
+    ),
+    'primary key' => array('pid'),
+    'indexes' => array(
+      'term'    => array('term'),
+      'subj_area' => array('subj_area'),
+      'lib_guide'     => array('lib_guide'),
+    ),
+  );
+
+  return $schema;
+}
