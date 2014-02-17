@@ -20,7 +20,7 @@ function ccle_redirect_list() {
     $rows = array();
     foreach ($entries as $entry) {
       // Sanitize the data before handing it off to the theme layer.
-      $rows[] = array_map('check_plain', (array) $entry);
+    $rows[] = array_map('check_plain', (array) $entry);
     }
     // Make a table for them.
     $header = array(t('Pid'), t('term'), t('subj_area'), t('crsidx'), t('classidx'), t('lib_guide'));
@@ -38,15 +38,25 @@ function ccle_redirect_list() {
  *
  */
 function ccle_redirect_entry_load($entry = array()) {
-  // Read all fields from the rc_res_rules table.
-  $select = db_select('ccle_redirect', 'example');
-//  $select->condition('user_group', 'Graduate');
-  $select->fields('example');
 
-  // Add each field and value as a condition to this query.
-  foreach ($entry as $field => $value) {
-    $select->condition($field, $value);
-  }
-  // Return the result in object format.
-  return $select->execute()->fetchAll();
+// Read all fields from the rc_res_rules table.
+$query = db_select('ccle_redirect','u');
+$query
+->condition('u.subj_area','ENGCOMP','<>')
+->fields('u',array('pid','term','subj_area','crsidx','classidx','lib_guide'))
+->range(0,50);
+$result=$query->execute();
+
+return $result;
 }
+
+//<?php
+//    $result = db_select('node', 'n')
+//    ->fields('n')
+//    ->condition('nid', $node->nid,'=')
+//    ->condition('status', 0,'>')
+//    ->condition('uid', array(1,5,7),'IN')
+//    ->execute()
+//    ->fetchAssoc();
+//?>
+
