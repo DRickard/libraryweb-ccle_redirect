@@ -5,7 +5,7 @@ function ccle_redirect_menu() {
     $items['redirect/ccle'] = array(
         'title' => 'CCLE Request Parameters',
         'page callback' => 'ccle_redirect_list',
-        'page arguments' => array(0),
+        'page arguments' => array(1),
         'access arguments' => array('access content'),
         'type' => MENU_NORMAL_ITEM,
      );
