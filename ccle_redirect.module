@@ -13,6 +13,9 @@ function ccle_redirect_menu() {
 }
 
 function ccle_redirect_list() {
+
+  $myvar = $_GET['var1'];
+
   $output = '';
 
   // Get all entries in the rc_res_rules table.
