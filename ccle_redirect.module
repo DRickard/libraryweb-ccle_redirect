@@ -57,7 +57,13 @@ $query
 ->range(0,50);
 $result=$query->execute();
 
-return $result;
+    while(
+    $record = $result->fetchAssoc()) {
+        $return .= $record;
+    }
+
+
+return $return;
 }
 
 //<?php
