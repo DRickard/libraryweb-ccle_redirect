@@ -58,12 +58,12 @@ $query
 $result=$query->execute();
 print_r($result);
 
-    while( $record = $result->fetchAssoc() ) {
-        print_r($record);
-    }
+//    while( $record = $result->fetchAssoc() ) {
+//        print_r($record);
+//    }
 
 
-//return $result;
+return $result;
 }
 
 //<?php
