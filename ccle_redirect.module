@@ -59,11 +59,11 @@ $result=$query->execute();
 
     while(
     $record = $result->fetchAssoc()) {
-        $return .= $record;
+        print_r($record);
     }
 
 
-return $return;
+return $result;
 }
 
 //<?php
