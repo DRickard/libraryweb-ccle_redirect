@@ -48,7 +48,7 @@ function ccle_redirect_list() {
  *
  */
 function ccle_redirect_entry_load($entry = array()) {
-    print_r($myvar1);
+    print_r("$myvar1");
 // Read all fields from the rc_res_rules table.
 $query = db_select('ccle_redirect','u');
 $query
