@@ -14,7 +14,7 @@ function ccle_redirect_menu() {
 
 function ccle_redirect_list() {
 
-    $myvar0 = $_GET["c0[t]"];
+    $myvar0 = $_GET['c0[t]'][0];
     $myvar1 = $_GET['c0[sub]'];
     $myvar2 = $_GET['c0[cat]'];
     $myvar3 = $_GET['c0[sec]'];
@@ -36,7 +36,7 @@ function ccle_redirect_list() {
     drupal_set_message(t('No entries have been added yet.'));
   }
   $output .= 'myVar0 = '.$myvar0;
-  return $myvar0;
+  return $output;
 }
 
 
