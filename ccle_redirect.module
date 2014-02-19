@@ -25,7 +25,7 @@ function ccle_redirect_list() {
   $output = '';
 
   // Get all entries in the rc_res_rules table.
-  if ($entries = ccle_redirect_entry_load()) {
+  if ($entries = ccle_redirect_entry_load($myvar1)) {
     $rows = array();
     foreach ($entries as $entry) {
       // Sanitize the data before handing it off to the theme layer.
@@ -47,8 +47,8 @@ function ccle_redirect_list() {
  * Read from the database using a filter array.
  *
  */
-function ccle_redirect_entry_load($entry = array()) {
-    print_r("===>".$myvar1);
+function ccle_redirect_entry_load($entry = array($mySubj)) {
+    print_r("===>".$mySubj);
 // Read all fields from the rc_res_rules table.
 $query = db_select('ccle_redirect','u');
 $query
