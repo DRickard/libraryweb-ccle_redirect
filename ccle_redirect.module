@@ -52,7 +52,7 @@ function ccle_redirect_entry_load($entry = array()) {
 // Read all fields from the rc_res_rules table.
 $query = db_select('ccle_redirect','u');
 $query
-->condition('u.subj_area',$myvar1,'=')
+->condition('u.subj_area','$myvar1','=')
 ->fields('u',array('pid','term','subj_area','crsidx','classidx','lib_guide'))
 ->range(0,50);
 $result=$query->execute();
