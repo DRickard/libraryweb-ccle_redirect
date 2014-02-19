@@ -56,9 +56,9 @@ $query
 ->fields('u',array('pid','term','subj_area','crsidx','classidx','lib_guide'))
 ->range(0,50);
 $result=$query->execute();
+print_r($result);
 
-    while(
-    $record = $result->fetchAssoc()) {
+    while( $record = $result->fetchAssoc() ) {
         print_r($record);
     }
 
