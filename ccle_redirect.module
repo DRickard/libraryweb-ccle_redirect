@@ -39,7 +39,6 @@ function ccle_redirect_list() {
     drupal_set_message(t('No entries have been added yet.'));
   }
   $output .= 'myVar0 = '.$myvar0.' '.$myvar1.' '.$myvar2.' '.$myvar3.' ';
-print_r($myvar1);
   return $output;
 }
 
@@ -49,7 +48,7 @@ print_r($myvar1);
  *
  */
 function ccle_redirect_entry_load($entry = array()) {
-
+    print_r($myvar1);
 // Read all fields from the rc_res_rules table.
 $query = db_select('ccle_redirect','u');
 $query
