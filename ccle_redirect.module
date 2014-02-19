@@ -47,8 +47,8 @@ function ccle_redirect_list() {
  * Read from the database using a filter array.
  *
  */
-function ccle_redirect_entry_load($entry = array($mySubj)) {
-    print_r("===>".$mySubj);
+function ccle_redirect_entry_load($entry = array()) {
+    print_r("===>".$entry);
 // Read all fields from the rc_res_rules table.
 $query = db_select('ccle_redirect','u');
 $query
