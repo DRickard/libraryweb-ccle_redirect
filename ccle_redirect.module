@@ -25,7 +25,7 @@ function ccle_redirect_list() {
   $output = '';
 
   // Get all entries in the rc_res_rules table.
-  if ($entries = ccle_redirect_entry_load($myvar0)) {
+  if ($entries = ccle_redirect_entry_load($myvar1)) {
     $rows = array();
     foreach ($entries as $entry) {
       // Sanitize the data before handing it off to the theme layer.
@@ -48,11 +48,11 @@ function ccle_redirect_list() {
  *
  */
 function ccle_redirect_entry_load($entry = array()) {
-    print_r("===>".$entry);
+//    print_r("===>".$entry);
 // Read all fields from the rc_res_rules table.
 $query = db_select('ccle_redirect','u');
 $query
-->condition('u.subj_area','ASIAN','=')
+->condition('u.subj_area',$entry,'=')
 ->fields('u',array('pid','term','subj_area','crsidx','classidx','lib_guide'))
 ->range(0,50);
 $result=$query->execute();
