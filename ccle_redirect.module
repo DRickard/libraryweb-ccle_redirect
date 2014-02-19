@@ -19,7 +19,7 @@ function ccle_redirect_list() {
     $myvar2 = $_GET['c0[cat]'];
     $myvar3 = $_GET['c0[sec]'];
 
-krumo("iopiop");
+krumo("iopiop ===>".$myvar0);
 
   $output = '';
 
