@@ -48,7 +48,7 @@ krumo($rows);
   else {
     drupal_set_message(t('No entries have been added yet.'));
   }
-  $output .= 'myVar0 = '.$myvar0.' '.$myvar1.' '.$myvar2.' '.$myvar3.' ';
+  $output .= 'myVars = '.$myvar0.' '.$myvar1.' '.$myvar2.' '.$myvar3.' ';
   return $output;
 }
 
@@ -62,7 +62,7 @@ function ccle_redirect_entry_load($entry = array()) {
 // Read all fields from the rc_res_rules table.
 $query = db_select('ccle_redirect','u');
 $query
-->condition('u.term',$entry,'=')
+->condition('u.subj_area',$entry,'=')
 ->fields('u',array('pid','term','subj_area','crsidx','classidx','lib_guide'))
 ->range(0,50);
 $result=$query->execute();
