@@ -90,8 +90,19 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ASIAN',
     'crsidx'     => '0060W M ',
-    'classidx'     => ' 002  ',
+    'classidx'     => ' 001  ',
     'lib_guide'     => 'http://www.ucla.edu',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+  $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ASIAN',
+    'crsidx'     => '0060W M ',
+    'classidx'     => ' 003  ',
+    'lib_guide'     => 'http://www.library.ucla.edu',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
