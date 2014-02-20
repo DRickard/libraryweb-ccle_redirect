@@ -40,7 +40,7 @@ foreach ($rows as $row) {
 //    krumo($myvar2);
 
     if( $row['crsidx'] == $myvar2 ){
-        if( $row['sec'] == $myvar3 ){
+        if( $row['classidx'] == $myvar3 ){
             print_r("section match");
         }
     }
