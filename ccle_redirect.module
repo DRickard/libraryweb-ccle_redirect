@@ -34,7 +34,7 @@ function ccle_redirect_list() {
 
 //foreach ($rows as $row) {
 // Sanitize the data before handing it off to the theme layer.
-print_r('=====>'.$rows);
+krumo('=====>'.$rows);
 //}
 
 
