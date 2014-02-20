@@ -25,13 +25,22 @@ function ccle_redirect_list() {
   $output = '';
 
   // Get all entries in the rc_res_rules table.
-  if ($entries = ccle_redirect_entry_load($myvar0)) {
+  if ($entries = ccle_redirect_entry_load($myvar1)) {
     $rows = array();
     foreach ($entries as $entry) {
       // Sanitize the data before handing it off to the theme layer.
     $rows[] = array_map('check_plain', (array) $entry);
-        print_r($rows);
     }
+
+foreach ($rows as $row) {
+// Sanitize the data before handing it off to the theme layer.
+print_r('=====>'.$row);
+}
+
+
+
+
+
     // Make a table for them.
     $header = array(t('Pid'), t('term'), t('subj_area'), t('crsidx'), t('classidx'), t('lib_guide'));
     $output .= theme('table', array('header' => $header, 'rows' => $rows));
