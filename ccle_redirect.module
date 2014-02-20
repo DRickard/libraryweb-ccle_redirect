@@ -40,7 +40,7 @@ foreach ($rows as $row) {
 
     if( $row['crsidx'] == $myvar2){
         if( $row['sec'] == $myvar3){
-            print_r("poipoipoi");
+            print_r("section match");
         }
     }
 
