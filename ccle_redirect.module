@@ -40,7 +40,6 @@ print_r('=====>'.$rows);
 
 
 
-
     // Make a table for them.
     $header = array(t('Pid'), t('term'), t('subj_area'), t('crsidx'), t('classidx'), t('lib_guide'));
     $output .= theme('table', array('header' => $header, 'rows' => $rows));
