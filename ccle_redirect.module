@@ -32,10 +32,10 @@ function ccle_redirect_list() {
     $rows[] = array_map('check_plain', (array) $entry);
     }
 
-foreach ($rows as $row) {
+//foreach ($rows as $row) {
 // Sanitize the data before handing it off to the theme layer.
-print_r('=====>'.$row);
-}
+print_r('=====>'.$rows);
+//}
 
 
 
