@@ -19,15 +19,15 @@ function ccle_redirect_list() {
     $myvar2 = $_GET['c0']['cat'];
     $myvar3 = $_GET['c0']['sec'];
 
-    $myvar0 .= str_replace(' ', '', $myvar0);
-    $myvar1 .= str_replace(' ', '', $myvar1);
-    $myvar2 .= str_replace(' ', '', $myvar2);
-    $myvar3 .= str_replace(' ', '', $myvar3);
+    $myvar0 = str_replace(' ', '', $myvar0);
+    $myvar1 = str_replace(' ', '', $myvar1);
+    $myvar2 = str_replace(' ', '', $myvar2);
+    $myvar3 = str_replace(' ', '', $myvar3);
 
-    $myvar0 .= str_replace('%20', '', $myvar0);
-    $myvar1 .= str_replace('%20', '', $myvar1);
-    $myvar2 .= str_replace('%20', '', $myvar2);
-    $myvar3 .= str_replace('%20', '', $myvar3);
+    $myvar0 = str_replace('%20', '', $myvar0);
+    $myvar1 = str_replace('%20', '', $myvar1);
+    $myvar2 = str_replace('%20', '', $myvar2);
+    $myvar3 = str_replace('%20', '', $myvar3);
 
 //    krumo($_GET);
 //    krumo($myvar0);
