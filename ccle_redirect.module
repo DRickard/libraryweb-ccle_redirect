@@ -36,6 +36,12 @@ function ccle_redirect_list() {
 foreach ($rows as $row) {
 // Sanitize the data before handing it off to the theme layer.
 krumo($row);
+
+if( $row['crsidx'] == $myvar2){
+    print_r("poipoipoi")
+}
+
+
 }
 
 
