@@ -46,8 +46,8 @@ function ccle_redirect_list() {
 
 foreach ($rows as $row) {
 // Sanitize the data before handing it off to the theme layer.
-    krumo($row['classidx']);
-    krumo($myvar3);
+    krumo($row['crsidx']);
+    krumo($myvar2);
 
     if( $row['term'] == $myvar0 ){
         print_r("term match");
