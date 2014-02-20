@@ -35,11 +35,11 @@ function ccle_redirect_list() {
 
 foreach ($rows as $row) {
 // Sanitize the data before handing it off to the theme layer.
-    krumo($row['crsidx']);
-    krumo($myvar2);
+//    krumo($row['crsidx']);
+//    krumo($myvar2);
 
-    if( $row['crsidx'] == $myvar2){
-        if( $row['sec'] == $myvar3){
+    if( $row['crsidx'] == $myvar2 ){
+        if( $row['sec'] == $myvar3 ){
             print_r("section match");
         }
     }
