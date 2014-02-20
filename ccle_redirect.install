@@ -87,7 +87,7 @@ function ccle_redirect_install() {
     ->execute();
 
   $fields = array(
-    'term'    => '14F',
+    'term'    => '14W',
     'subj_area' => 'ASIAN',
     'crsidx'     => '0060W M ',
     'classidx'     => ' 002  ',
@@ -98,7 +98,7 @@ function ccle_redirect_install() {
     ->execute();
 
   $fields = array(
-    'term'    => '14F',
+    'term'    => '14W',
     'subj_area' => 'ASIAN',
     'crsidx'     => '0060W M ',
     'classidx'     => ' 003  ',
