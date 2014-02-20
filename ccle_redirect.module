@@ -22,6 +22,7 @@ function ccle_redirect_list() {
 //    krumo($_GET);
 //    krumo($myvar0);
 
+
   $output = '';
 
   // Get all entries in the rc_res_rules table.
