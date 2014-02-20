@@ -38,9 +38,11 @@ foreach ($rows as $row) {
     krumo($row['crsidx']);
     krumo($myvar2);
 
-if( $row['crsidx'] == $myvar2){
-    print_r("poipoipoi");
-}
+    if( $row['crsidx'] == $myvar2){
+        if( $row['sec'] == $myvar3){
+            print_r("poipoipoi");
+        }
+    }
 
 
 }
