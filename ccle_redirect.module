@@ -30,6 +30,7 @@ function ccle_redirect_list() {
     foreach ($entries as $entry) {
       // Sanitize the data before handing it off to the theme layer.
     $rows[] = array_map('check_plain', (array) $entry);
+        print_r($rows);
     }
     // Make a table for them.
     $header = array(t('Pid'), t('term'), t('subj_area'), t('crsidx'), t('classidx'), t('lib_guide'));
@@ -56,7 +57,7 @@ $query
 ->fields('u',array('pid','term','subj_area','crsidx','classidx','lib_guide'))
 ->range(0,50);
 $result=$query->execute();
-print_r($result);
+//print_r($result);
 
 //    while( $record = $result->fetchAssoc() ) {
 //        print_r($record);
