@@ -21,22 +21,11 @@ function ccle_redirect_install() {
   // db_insert().
 
   $fields = array(
-    'term'    => '13W',
-    'subj_area' => 'ENGCOMP',
-    'crsidx'     => '0003',
-    'classidx'     => '022',
-    'lib_guide'     => '1,',
-  );
-  db_insert('ccle_redirect')
-    ->fields($fields)
-    ->execute();
-
-  $fields = array(
     'term'    => '14W',
-    'subj_area' => 'AN N EA',
+    'subj_area' => 'ANNEA',
     'crsidx'     => '0010W',
-    'classidx'     => '001',
-    'lib_guide'     => '2,',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -44,10 +33,10 @@ function ccle_redirect_install() {
 
   $fields = array(
     'term'    => '14W',
-    'subj_area' => 'ASTR',
-    'crsidx'     => '0297M',
-    'classidx'     => '001',
-    'lib_guide'     => '3,4,',
+    'subj_area' => 'ANTHRO',
+    'crsidx'     => '0121C',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/anthro121c',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -55,32 +44,120 @@ function ccle_redirect_install() {
 
   $fields = array(
     'term'    => '14W',
-    'subj_area' => 'PHYSICS',
-    'crsidx'     => '0297M',
-    'classidx'     => '001',
-    'lib_guide'     => '3,4,',
+    'subj_area' => 'ANTHRO',
+    'crsidx'     => '0128A',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/anthro128a',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
     ->execute();
 
   $fields = array(
-    'term'    => '13F',
+    'term'    => '14W',
+    'subj_area' => 'ANTHRO',
+    'crsidx'     => '0008',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/anthro8',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+  $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ASIAN',
+    'crsidx'     => '0060WM',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/asia',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+  $fields = array(
+    'term'    => '14W',
     'subj_area' => 'ASIAN',
     'crsidx'     => '0060WM',
     'classidx'     => '001',
-    'lib_guide'     => '5,',
+    'lib_guide'     => 'http://guides.library.ucla.edu/asian60w',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
     ->execute();
-    
+
   $fields = array(
-    'term'    => '13F',
+    'term'    => '14W',
     'subj_area' => 'RELIGN',
     'crsidx'     => '0060WM',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/asian60w',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+  $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'CHEM',
+    'crsidx'     => '0030AL',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/chem30al',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+  $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'CHEM',
+    'crsidx'     => '0030BL',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/chem30bl',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+  $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'CHEM',
+    'crsidx'     => '0030CL',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/chem30cl',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+  $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'COMMST',
+    'crsidx'     => '0103A',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/commstudies103',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+  $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'COMMST',
+    'crsidx'     => '0010',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/commstud10',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+  $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ENGCOMP',
+    'crsidx'     => '0003',
     'classidx'     => '001',
-    'lib_guide'     => '5,',
+    'lib_guide'     => 'http://guides.library.ucla.edu/english3',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -88,10 +165,10 @@ function ccle_redirect_install() {
 
   $fields = array(
     'term'    => '14W',
-    'subj_area' => 'ASIAN',
-    'crsidx'     => '0060WM',
-    'classidx'     => '001',
-    'lib_guide'     => 'http://www.ucla.edu',
+    'subj_area' => 'EDUC',
+    'crsidx'     => '0178CM',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/ws178',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -99,21 +176,10 @@ function ccle_redirect_install() {
 
   $fields = array(
     'term'    => '14W',
-    'subj_area' => 'ASIAN',
-    'crsidx'     => '0060WM',
-    'classidx'     => '003',
-    'lib_guide'     => 'http://www.library.ucla.edu',
-  );
-  db_insert('ccle_redirect')
-    ->fields($fields)
-    ->execute();
-
-  $fields = array(
-    'term'    => '14W',
-    'subj_area' => 'ASIAN',
-    'crsidx'     => '0060WM',
-    'classidx'     => '009',
-    'lib_guide'     => 'http://www.library.ucla.edu',
+    'subj_area' => 'GENDER',
+    'crsidx'     => '0178LCM',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/ws178',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
