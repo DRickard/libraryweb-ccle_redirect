@@ -56,7 +56,7 @@ foreach ($rows as $row) {
             if( $row['classidx'] == $myvar3 ){
                 print_r("section match");
                 print_r($row['lib_guide']);
-                drupal_goto($path = $row['lib_guide']);
+//                drupal_goto($path = $row['lib_guide']);
             }
         }
     }
