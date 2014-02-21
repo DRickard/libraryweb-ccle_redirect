@@ -201,3 +201,4 @@ function ccle_redirect_schema() {
 
   return $schema;
 }
+
