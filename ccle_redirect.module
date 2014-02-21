@@ -50,12 +50,12 @@ foreach ($rows as $row) {
 //    krumo($myvar3);
 
     if( $row['term'] == $myvar0 ){
-        print_r("term match ");
+//        print_r("term match ");
         if( $row['crsidx'] == $myvar2 ){
-            print_r("course match ");
+//            print_r("course match ");
             if( $row['classidx'] == $myvar3 ){
-                print_r("section match ");
-                print_r($row['lib_guide']);
+//                print_r("section match ");
+//                print_r($row['lib_guide']);
                 drupal_goto($path = $row['lib_guide']);
             }
         }
