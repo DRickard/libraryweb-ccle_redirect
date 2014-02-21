@@ -112,7 +112,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ASIAN',
     'crsidx'     => '0060WM',
-    'classidx'     => '003',
+    'classidx'     => '001',
     'lib_guide'     => 'http://www.library.ucla.edu',
   );
   db_insert('ccle_redirect')
