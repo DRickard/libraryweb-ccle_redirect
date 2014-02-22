@@ -54,12 +54,12 @@ foreach ($rows as $row) {
     if( $row['term'] == $myvar0 ){
 print_r('TERM');
         $error_term = '';
-        if( count( $row['crsidx'] ) > 0 ){
+        if( strlen( $row['crsidx'] ) > 0 ){
 print_r(' crsidx > 0 ');
             if( $row['crsidx'] == $myvar2 ){
 print_r(' crsidx_db = crsidx_ccle ');
-                if( count( $row['classidx'] ) > 0 ){
-print_r(' classidx>0='.$row['classidx'].' ');
+                if( strlen( $row['classidx'] ) > 0 ){
+print_r(' classidx>0='.strlen( $row['classidx'].' ') );
                     if( $row['classidx'] == $myvar3 ){
 print_r(' classidx_db = classidx_ccle ');
                     $rd_class = $row['lib_guide'];
