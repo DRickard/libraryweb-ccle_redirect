@@ -59,7 +59,7 @@ print_r(' crsidx > 0 ');
             if( $row['crsidx'] == $myvar2 ){
 print_r(' crsidx_db = crsidx_ccle ');
                 if( count( $row['classidx'] ) > 0 ){
-print_r(' classidx>0='.count( $row['classidx'] ).' ');
+print_r(' classidx>0='.$row['classidx'].' ');
                     if( $row['classidx'] == $myvar3 ){
 print_r(' classidx_db = classidx_ccle ');
                     $rd_class = $row['lib_guide'];
