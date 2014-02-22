@@ -64,6 +64,8 @@ print_r('classidx >0');
 print_r('classidx_db = classidx_ccle');
                     $rd_class = $row['lib_guide'];
 //                    drupal_goto($path = $row['lib_guide']);
+                    } else{
+                        $rd_crs = $row['lib_guide'];
                     }
                 } else {
                     $rd_crs = $row['lib_guide'];
