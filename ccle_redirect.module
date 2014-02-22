@@ -82,9 +82,16 @@ print_r(' crsidx = 0 ');
     }
 }
 
-
 // cycle through redirect_subj, crs and class and branch accordingly
-
+      if( strlen( $rd_class ) > 0 ){
+          drupal_goto( $path = $rd_class );
+      } elseif( strlen( $rd_crs ) > 0 ) {
+          drupal_goto( $path = $rd_crs );
+      } elseif ( strlen( $rd_subj ) > 0 ) {
+          drupal_goto( $path = $rd_subj );
+      } else {
+          $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
+      }
 
 
     // Make a table for them.
