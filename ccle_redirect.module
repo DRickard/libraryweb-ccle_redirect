@@ -82,7 +82,7 @@ foreach ($rows as $row) {
         $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
 //    drupal_set_message(t('No Lib-Guides have been added yet.')); // display on _menu page to user
   }
-  $output .= 'myVars = '.$myvar0.' '.$myvar1.' '.$myvar2.' '.$myvar3.' \n';
+  $output .= 'myVars = '.$myvar0.' '.$myvar1.' '.$myvar2.' '.$myvar3.' === '.$rd_subj.' '.$rd_crs.' '.$rd_class;
   return $output;
 }
 
