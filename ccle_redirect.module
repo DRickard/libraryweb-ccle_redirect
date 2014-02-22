@@ -59,13 +59,13 @@ foreach ($rows as $row) {
 //                    drupal_goto($path = $row['lib_guide']);
                     }
                 } else {
-                    $rd_crs = $row['lib_guide']);
+                    $rd_crs = $row['lib_guide'];
                 }
             } else {
-                $rd_subj = $row['lib_guide']);
+                $rd_subj = $row['lib_guide'];
             }
         } else {
-            $rd_subj = $row['lib_guide']);
+            $rd_subj = $row['lib_guide'];
         }
     }
 }
