@@ -46,7 +46,9 @@ function ccle_redirect_list() {
 
 $error_term = t('No Lib-Guides for this term have been added yet.'); // display on _menu page to user
 
-$rd_class = '';
+      $rd_subj = '';
+      $rd_crs = '';
+      $rd_class = '';
 foreach ($rows as $row) {
 // Sanitize the data before handing it off to the theme layer.
     if( $row['term'] == $myvar0 ){
