@@ -55,25 +55,28 @@ foreach ($rows as $row) {
 print_r('TERM');
         $error_term = '';
         if( count( $row['crsidx'] ) > 0 ){
-print_r('crsidx >0');
+print_r(' crsidx > 0 ');
             if( $row['crsidx'] == $myvar2 ){
-print_r('crsidx_db = crsidx_ccle');
+print_r(' crsidx_db = crsidx_ccle ');
                 if( count( $row['classidx'] ) > 0 ){
-print_r('classidx >0');
+print_r(' classidx > 0 ');
                     if( $row['classidx'] == $myvar3 ){
-print_r('classidx_db = classidx_ccle');
+print_r(' classidx_db = classidx_ccle ');
                     $rd_class = $row['lib_guide'];
 //                    drupal_goto($path = $row['lib_guide']);
                     } else{
-                        $rd_crs = $row['lib_guide'];
+print_r(' classidx_db <> classidx_ccle ');
                     }
                 } else {
+print_r(' classidx = 0 ');
                     $rd_crs = $row['lib_guide'];
                 }
             } else {
+print_r(' crsidx_db = crsidx_ccle ');
                 $rd_subj = $row['lib_guide'];
             }
         } else {
+print_r(' crsidx = 0 ');
             $rd_subj = $row['lib_guide'];
         }
     }
