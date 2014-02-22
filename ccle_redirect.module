@@ -55,7 +55,7 @@ foreach ($rows as $row) {
             if( $row['crsidx'] == $myvar2 ){
                 if( count( $row['classidx'] ) > 0 ){
                     if( $row['classidx'] == $myvar3 ){
-                    $rd_class = $row['lib_guide']);
+                    $rd_class = $row['lib_guide'];
 //                    drupal_goto($path = $row['lib_guide']);
                     }
                 } else {
