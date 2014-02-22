@@ -44,34 +44,43 @@ function ccle_redirect_list() {
     $rows[] = array_map('check_plain', (array) $entry);
     }
 
+$error_term = t('No Lib-Guides for this term have been added yet.'); // display on _menu page to user
+
+$rd_class = '';
 foreach ($rows as $row) {
 // Sanitize the data before handing it off to the theme layer.
-//    krumo($row['classidx']);
-//    krumo($myvar3);
-
     if( $row['term'] == $myvar0 ){
-//        print_r("term match ");
-        if( $row['crsidx'] == $myvar2 ){
-//            print_r("course match ");
-            if( $row['classidx'] == $myvar3 ){
-//                print_r("section match ");
-//                print_r($row['lib_guide']);
-                drupal_goto($path = $row['lib_guide']);
+        $error_term = '';
+        if( count( $row['crsidx'] ) > 0 ){
+            if( $row['crsidx'] == $myvar2 ){
+                if( count( $row['classidx'] ) > 0 ){
+                    if( $row['classidx'] == $myvar3 ){
+                    $rd_class = $row['lib_guide']);
+//                    drupal_goto($path = $row['lib_guide']);
+                    }
+                } else {
+                    $rd_crs = $row['lib_guide']);
+                }
+            } else {
+                $rd_subj = $row['lib_guide']);
             }
+        } else {
+            $rd_subj = $row['lib_guide']);
         }
     }
-
 }
 
+
+// cycle through redirect_subj, crs and class and branch accordingly
 
 
 
     // Make a table for them.
     $header = array(t('Pid'), t('term'), t('subj_area'), t('crsidx'), t('classidx'), t('lib_guide'));
     $output .= theme('table', array('header' => $header, 'rows' => $rows));
-  }
-  else {
-    drupal_set_message(t('No entries have been added yet.'));
+  } else {
+        $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
+//    drupal_set_message(t('No Lib-Guides have been added yet.')); // display on _menu page to user
   }
   $output .= 'myVars = '.$myvar0.' '.$myvar1.' '.$myvar2.' '.$myvar3.' ';
   return $output;
