@@ -82,6 +82,7 @@ print_r(' crsidx = 0 ');
     }
 }
 
+
 // cycle through redirect_subj, crs and class and branch accordingly
       if( strlen( $rd_class ) > 0 ){
           drupal_goto( $path = $rd_class );
