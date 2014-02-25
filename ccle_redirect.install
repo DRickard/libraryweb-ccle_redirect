@@ -211,7 +211,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ANNEA',
     'crsidx'     => '0010W',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
@@ -222,7 +222,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ANTHRO',
     'crsidx'     => '0121C',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/anthro121c',
   );
   db_insert('ccle_redirect')
@@ -233,7 +233,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ANTHRO',
     'crsidx'     => '0128A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/anthro128a',
   );
   db_insert('ccle_redirect')
@@ -244,7 +244,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ANTHRO',
     'crsidx'     => '8',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/anthro8',
   );
   db_insert('ccle_redirect')
@@ -255,7 +255,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ASIAN',
     'crsidx'     => '0060WM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/asian60w',
   );
   db_insert('ccle_redirect')
@@ -266,7 +266,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'RELIGN',
     'crsidx'     => '0060WM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/asian60w',
   );
   db_insert('ccle_redirect')
@@ -277,7 +277,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'CHEM',
     'crsidx'     => '0030AL',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/chem30al',
   );
   db_insert('ccle_redirect')
@@ -288,7 +288,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'CHEM',
     'crsidx'     => '0030BL',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/chem30bl',
   );
   db_insert('ccle_redirect')
@@ -299,7 +299,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'CHEM',
     'crsidx'     => '0030CL',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/chem30cl',
   );
   db_insert('ccle_redirect')
@@ -310,7 +310,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'COMMST',
     'crsidx'     => '0103A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/commstudies103',
   );
   db_insert('ccle_redirect')
@@ -321,7 +321,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'COMMST',
     'crsidx'     => '0103B',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/commstudies103',
   );
   db_insert('ccle_redirect')
@@ -332,7 +332,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'COMMST',
     'crsidx'     => '104',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/cs104',
   );
   db_insert('ccle_redirect')
@@ -343,7 +343,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'COMMST',
     'crsidx'     => '10',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/commstud10',
   );
   db_insert('ccle_redirect')
@@ -354,7 +354,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'COMMST',
     'crsidx'     => '150',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/commstud150',
   );
   db_insert('ccle_redirect')
@@ -365,7 +365,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'COMMST',
     'crsidx'     => '1',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/CommStudies1',
   );
   db_insert('ccle_redirect')
@@ -376,7 +376,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'COMMHLT',
     'crsidx'     => '132',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/CHS132',
   );
   db_insert('ccle_redirect')
@@ -387,7 +387,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ARTHIS',
     'crsidx'     => '0119CC',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/arthis119c',
   );
   db_insert('ccle_redirect')
@@ -398,7 +398,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ARTHIS',
     'crsidx'     => '0216CC',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/arthis119c',
   );
   db_insert('ccle_redirect')
@@ -409,7 +409,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'DANCE',
     'crsidx'     => '101',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/dance101',
   );
   db_insert('ccle_redirect')
@@ -420,7 +420,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'WLARTS',
     'crsidx'     => '201',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/dance101',
   );
   db_insert('ccle_redirect')
@@ -431,7 +431,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ECON',
     'crsidx'     => '137',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/urban',
   );
   db_insert('ccle_redirect')
@@ -442,7 +442,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ECON',
     'crsidx'     => '107',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/econ/econ107',
   );
   db_insert('ccle_redirect')
@@ -453,7 +453,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ECON',
     'crsidx'     => '0173A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/econ/econ173',
   );
   db_insert('ccle_redirect')
@@ -464,7 +464,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ECON',
     'crsidx'     => '0173B',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/econ/econ173',
   );
   db_insert('ccle_redirect')
@@ -475,7 +475,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'EDUC',
     'crsidx'     => '0178CM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ws178',
   );
   db_insert('ccle_redirect')
@@ -486,7 +486,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'EDUC',
     'crsidx'     => '0178LCM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ws178',
   );
   db_insert('ccle_redirect')
@@ -497,7 +497,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'EDUC',
     'crsidx'     => '0278CM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ws178',
   );
   db_insert('ccle_redirect')
@@ -508,7 +508,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'EDUC',
     'crsidx'     => '0278LCM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ws178',
   );
   db_insert('ccle_redirect')
@@ -519,7 +519,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GENDER',
     'crsidx'     => '0178CM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ws178',
   );
   db_insert('ccle_redirect')
@@ -530,7 +530,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GENDER',
     'crsidx'     => '0178LCM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ws178',
   );
   db_insert('ccle_redirect')
@@ -541,7 +541,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GENDER',
     'crsidx'     => '0278CM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ws178',
   );
   db_insert('ccle_redirect')
@@ -552,7 +552,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GENDER',
     'crsidx'     => '0278LCM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ws178',
   );
   db_insert('ccle_redirect')
@@ -563,7 +563,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ENGR',
     'crsidx'     => '0183EW',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/eng183',
   );
   db_insert('ccle_redirect')
@@ -574,7 +574,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ENGR',
     'crsidx'     => '0185EW',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/eng185',
   );
   db_insert('ccle_redirect')
@@ -585,7 +585,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ESL',
     'crsidx'     => '0033C',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/esl33c',
   );
   db_insert('ccle_redirect')
@@ -596,7 +596,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ENGCOMP',
     'crsidx'     => '0131B',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/engcomp131b',
   );
   db_insert('ccle_redirect')
@@ -607,7 +607,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ENGCOMP',
     'crsidx'     => '2',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/english2',
   );
   db_insert('ccle_redirect')
@@ -618,7 +618,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ENGCOMP',
     'crsidx'     => '0002I',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/english2',
   );
   db_insert('ccle_redirect')
@@ -629,7 +629,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ENGCOMP',
     'crsidx'     => '3',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/english3',
   );
   db_insert('ccle_redirect')
@@ -640,7 +640,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'EPIDEM',
     'crsidx'     => '411',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/epidem411',
   );
   db_insert('ccle_redirect')
@@ -651,7 +651,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'FILMTV',
     'crsidx'     => '0106A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ftv106A',
   );
   db_insert('ccle_redirect')
@@ -662,7 +662,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'FILMTV',
     'crsidx'     => '0106B',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ftv106b',
   );
   db_insert('ccle_redirect')
@@ -673,7 +673,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'FILMTV',
     'crsidx'     => '0206A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ftv106b',
   );
   db_insert('ccle_redirect')
@@ -684,7 +684,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'FILMTV',
     'crsidx'     => '0106C',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ftv106c',
   );
   db_insert('ccle_redirect')
@@ -695,7 +695,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'FILMTV',
     'crsidx'     => '108',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/documentary',
   );
   db_insert('ccle_redirect')
@@ -706,7 +706,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0021A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ge21',
   );
   db_insert('ccle_redirect')
@@ -717,7 +717,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0021B',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ge21',
   );
   db_insert('ccle_redirect')
@@ -728,7 +728,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0021CW',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ge21',
   );
   db_insert('ccle_redirect')
@@ -739,7 +739,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0026A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GE26',
   );
   db_insert('ccle_redirect')
@@ -750,7 +750,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0026B',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GE26',
   );
   db_insert('ccle_redirect')
@@ -761,7 +761,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0026CW',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GE26',
   );
   db_insert('ccle_redirect')
@@ -772,7 +772,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0030A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ge30myth',
   );
   db_insert('ccle_redirect')
@@ -783,7 +783,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0030B',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ge30myth',
   );
   db_insert('ccle_redirect')
@@ -794,7 +794,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0030CW',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ge30myth',
   );
   db_insert('ccle_redirect')
@@ -805,7 +805,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0070A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GE70',
   );
   db_insert('ccle_redirect')
@@ -816,7 +816,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0070B',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GE70',
   );
   db_insert('ccle_redirect')
@@ -827,7 +827,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0070CW',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GE70',
   );
   db_insert('ccle_redirect')
@@ -838,7 +838,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0073A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GECluster73',
   );
   db_insert('ccle_redirect')
@@ -849,7 +849,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0073B',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GECluster73',
   );
   db_insert('ccle_redirect')
@@ -860,7 +860,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0073CW',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GECluster73',
   );
   db_insert('ccle_redirect')
@@ -871,7 +871,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0080A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GE80',
   );
   db_insert('ccle_redirect')
@@ -882,7 +882,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0080B',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GE80',
   );
   db_insert('ccle_redirect')
@@ -893,7 +893,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0080CW',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GE80',
   );
   db_insert('ccle_redirect')
@@ -904,7 +904,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0001AM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GEM1',
   );
   db_insert('ccle_redirect')
@@ -915,7 +915,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0001BM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GEM1',
   );
   db_insert('ccle_redirect')
@@ -926,7 +926,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GECLST',
     'crsidx'     => '0001CWM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GEM1',
   );
   db_insert('ccle_redirect')
@@ -937,7 +937,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ENVIRON',
     'crsidx'     => '0001AM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GEM1',
   );
   db_insert('ccle_redirect')
@@ -948,7 +948,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ENVIRON',
     'crsidx'     => '0001BM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GEM1',
   );
   db_insert('ccle_redirect')
@@ -959,7 +959,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'ENVIRON',
     'crsidx'     => '0001CWM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GEM1',
   );
   db_insert('ccle_redirect')
@@ -970,7 +970,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GENDER',
     'crsidx'     => '104',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/gs104',
   );
   db_insert('ccle_redirect')
@@ -981,7 +981,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GENDER',
     'crsidx'     => '125',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/gs125',
   );
   db_insert('ccle_redirect')
@@ -992,7 +992,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GENDER',
     'crsidx'     => '0186BM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ws186',
   );
   db_insert('ccle_redirect')
@@ -1003,7 +1003,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'HIST',
     'crsidx'     => '0187BM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ws186',
   );
   db_insert('ccle_redirect')
@@ -1014,7 +1014,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GLBLST',
     'crsidx'     => '194',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GlobalStudiesThesis',
   );
   db_insert('ccle_redirect')
@@ -1025,7 +1025,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GLBLST',
     'crsidx'     => '199',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GlobalStudiesThesis',
   );
   db_insert('ccle_redirect')
@@ -1036,7 +1036,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GLBLST',
     'crsidx'     => '0199A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GlobalStudiesThesis',
   );
   db_insert('ccle_redirect')
@@ -1047,7 +1047,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'GLBLST',
     'crsidx'     => '0199B',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/GlobalStudiesThesis',
   );
   db_insert('ccle_redirect')
@@ -1058,7 +1058,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'JAPAN',
     'crsidx'     => '161',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/aecontent.php?pid=58420&sid=2696141',
   );
   db_insert('ccle_redirect')
@@ -1069,7 +1069,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'IASTD',
     'crsidx'     => '50',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/iastd50',
   );
   db_insert('ccle_redirect')
@@ -1080,7 +1080,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'POLISCI',
     'crsidx'     => '0191H',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/PS191H',
   );
   db_insert('ccle_redirect')
@@ -1091,7 +1091,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'CHICANO',
     'crsidx'     => '0106CM',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/latinohealth',
   );
   db_insert('ccle_redirect')
@@ -1102,7 +1102,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'CHICANO',
     'crsidx'     => '0276C',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/latinohealth',
   );
   db_insert('ccle_redirect')
@@ -1113,7 +1113,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'PUBHLT',
     'crsidx'     => '0106M',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/latinohealth',
   );
   db_insert('ccle_redirect')
@@ -1124,7 +1124,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'RUSSIAN',
     'crsidx'     => '0101A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/russian101A',
   );
   db_insert('ccle_redirect')
@@ -1135,7 +1135,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'RUSSIAN',
     'crsidx'     => '0101B',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/russian101B',
   );
   db_insert('ccle_redirect')
@@ -1146,7 +1146,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'RUSSIAN',
     'crsidx'     => '0107A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/russian107a',
   );
   db_insert('ccle_redirect')
@@ -1157,7 +1157,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'RUSSIAN',
     'crsidx'     => '121',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/russian-pop',
   );
   db_insert('ccle_redirect')
@@ -1168,7 +1168,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'SLAVIC',
     'crsidx'     => '0191T',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/slavic191t',
   );
   db_insert('ccle_redirect')
@@ -1179,7 +1179,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'SLAVIC',
     'crsidx'     => '0200A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/slavic200a',
   );
   db_insert('ccle_redirect')
@@ -1190,7 +1190,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'SOCWLF',
     'crsidx'     => '0280A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/socwlf280a',
   );
   db_insert('ccle_redirect')
@@ -1201,7 +1201,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'SOCIOL',
     'crsidx'     => '1',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/soc1',
   );
   db_insert('ccle_redirect')
@@ -1212,7 +1212,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'SOCIOL',
     'crsidx'     => '20',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/soc20',
   );
   db_insert('ccle_redirect')
@@ -1223,7 +1223,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'STATS',
     'crsidx'     => '0098T',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/statistics98T',
   );
   db_insert('ccle_redirect')
@@ -1234,7 +1234,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'THEATER',
     'crsidx'     => '0101A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/theater101',
   );
   db_insert('ccle_redirect')
@@ -1245,7 +1245,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'URBNPL',
     'crsidx'     => '0237A',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/SectorAnalysis',
   );
   db_insert('ccle_redirect')
@@ -1256,7 +1256,7 @@ function ccle_redirect_install() {
     'term'    => '14W',
     'subj_area' => 'WLARTS',
     'crsidx'     => '33',
-    'classidx'     => '-',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/wac33',
   );
   db_insert('ccle_redirect')
@@ -1266,9 +1266,9 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'AEROST',
-    'crsidx'     => '-',
-    'classidx'     => '-',
-    'lib_guide'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
+    'lib_guide'     => '',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -1277,8 +1277,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'AFLANG',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/african-languages',
   );
   db_insert('ccle_redirect')
@@ -1288,8 +1288,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'AFRCST',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/africa',
   );
   db_insert('ccle_redirect')
@@ -1299,8 +1299,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'AFRKAAN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/content.php?pid=57101&sid=418274#1271473',
   );
   db_insert('ccle_redirect')
@@ -1310,8 +1310,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'AFRO-AM',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/africanamerican',
   );
   db_insert('ccle_redirect')
@@ -1321,8 +1321,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'AMIND',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/american-indian',
   );
   db_insert('ccle_redirect')
@@ -1332,9 +1332,9 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ASL',
-    'crsidx'     => '-',
-    'classidx'     => '-',
-    'lib_guide'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
+    'lib_guide'     => '',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -1343,8 +1343,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ANNEA',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ancient-near-east',
   );
   db_insert('ccle_redirect')
@@ -1354,8 +1354,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ANES',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -1365,8 +1365,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ANTHRO',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/anthropology',
   );
   db_insert('ccle_redirect')
@@ -1376,8 +1376,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'APPLING',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/applied-linguistics',
   );
   db_insert('ccle_redirect')
@@ -1387,8 +1387,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ARABIC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/mideast',
   );
   db_insert('ccle_redirect')
@@ -1398,8 +1398,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ARCHEOL',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/anthropology',
   );
   db_insert('ccle_redirect')
@@ -1409,8 +1409,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ARCH&UD',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/architecture',
   );
   db_insert('ccle_redirect')
@@ -1420,8 +1420,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ARMENIA',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/mideast',
   );
   db_insert('ccle_redirect')
@@ -1431,8 +1431,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ART',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/art',
   );
   db_insert('ccle_redirect')
@@ -1442,8 +1442,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ARTHIS',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/art',
   );
   db_insert('ccle_redirect')
@@ -1453,8 +1453,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ART&ARC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/architecture',
   );
   db_insert('ccle_redirect')
@@ -1464,8 +1464,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ASIAN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/asia',
   );
   db_insert('ccle_redirect')
@@ -1475,8 +1475,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ASIAAM',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/asian-american',
   );
   db_insert('ccle_redirect')
@@ -1486,8 +1486,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ASTR',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/astro',
   );
   db_insert('ccle_redirect')
@@ -1497,8 +1497,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'A&OSCI',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/atmos',
   );
   db_insert('ccle_redirect')
@@ -1508,8 +1508,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'BERBER',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/content.php?pid=57101&sid=418274#1271504',
   );
   db_insert('ccle_redirect')
@@ -1519,8 +1519,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'BIOENGR',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/bioeng',
   );
   db_insert('ccle_redirect')
@@ -1530,8 +1530,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'BIOINFO',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => '???',
   );
   db_insert('ccle_redirect')
@@ -1541,8 +1541,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'BIOINFR',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => '???',
   );
   db_insert('ccle_redirect')
@@ -1552,8 +1552,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'BIOLCH',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -1563,8 +1563,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'BIOMATH',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -1574,8 +1574,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'BMEDPHY',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -1585,8 +1585,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'BMDRES',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/life_sciences',
   );
   db_insert('ccle_redirect')
@@ -1596,8 +1596,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'BIOSTAT',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/biostats',
   );
   db_insert('ccle_redirect')
@@ -1607,8 +1607,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'BULGAR',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/slavic',
   );
   db_insert('ccle_redirect')
@@ -1618,8 +1618,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'CEESTD',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/slavic',
   );
   db_insert('ccle_redirect')
@@ -1629,8 +1629,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'CHENGR',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/chemeng',
   );
   db_insert('ccle_redirect')
@@ -1640,8 +1640,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'CHEM',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/chem',
   );
   db_insert('ccle_redirect')
@@ -1651,8 +1651,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'CHICANO',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/chicano',
   );
   db_insert('ccle_redirect')
@@ -1662,8 +1662,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'CHIN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/chinese',
   );
   db_insert('ccle_redirect')
@@ -1673,9 +1673,9 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'CIVIC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
-    'lib_guide'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
+    'lib_guide'     => '',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -1684,8 +1684,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'C&EE',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/cee',
   );
   db_insert('ccle_redirect')
@@ -1695,8 +1695,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'CLASSIC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/classics',
   );
   db_insert('ccle_redirect')
@@ -1706,8 +1706,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'COMMST',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/communications',
   );
   db_insert('ccle_redirect')
@@ -1717,8 +1717,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'COMHLT',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/public_health',
   );
   db_insert('ccle_redirect')
@@ -1728,8 +1728,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'COMLIT',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/literature',
   );
   db_insert('ccle_redirect')
@@ -1739,8 +1739,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'C&SBIO',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/cs',
   );
   db_insert('ccle_redirect')
@@ -1750,8 +1750,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'COMSCI',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/cs',
   );
   db_insert('ccle_redirect')
@@ -1761,8 +1761,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'CAEM',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/anthropology',
   );
   db_insert('ccle_redirect')
@@ -1772,8 +1772,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'CZECH',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/slavic',
   );
   db_insert('ccle_redirect')
@@ -1783,8 +1783,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'DANCE',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/dance',
   );
   db_insert('ccle_redirect')
@@ -1794,8 +1794,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'DENT',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/dentistry',
   );
   db_insert('ccle_redirect')
@@ -1805,8 +1805,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'DESMA',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/design',
   );
   db_insert('ccle_redirect')
@@ -1816,8 +1816,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'DGTHUM',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/digital-humanities',
   );
   db_insert('ccle_redirect')
@@ -1827,9 +1827,9 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'DISSTD',
-    'crsidx'     => '-',
-    'classidx'     => '-',
-    'lib_guide'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
+    'lib_guide'     => '',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -1838,8 +1838,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'DUTCH',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/dutch',
   );
   db_insert('ccle_redirect')
@@ -1849,8 +1849,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'E&SSCI',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ess',
   );
   db_insert('ccle_redirect')
@@ -1860,8 +1860,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'EASTDS',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/east-asia',
   );
   db_insert('ccle_redirect')
@@ -1871,8 +1871,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'EEBIOL',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/life_sciences',
   );
   db_insert('ccle_redirect')
@@ -1882,8 +1882,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ECON',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/econ',
   );
   db_insert('ccle_redirect')
@@ -1893,8 +1893,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'EDUC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/education',
   );
   db_insert('ccle_redirect')
@@ -1904,8 +1904,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ELENGR',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ee',
   );
   db_insert('ccle_redirect')
@@ -1915,8 +1915,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ENGR',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/eng-guides',
   );
   db_insert('ccle_redirect')
@@ -1926,8 +1926,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ENGL',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/literature',
   );
   db_insert('ccle_redirect')
@@ -1937,8 +1937,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ESL',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/writing-guides',
   );
   db_insert('ccle_redirect')
@@ -1948,8 +1948,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ENGCOMP',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/writing-guides',
   );
   db_insert('ccle_redirect')
@@ -1959,8 +1959,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ENVIRON',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/enviro-guides',
   );
   db_insert('ccle_redirect')
@@ -1970,8 +1970,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ENVHLT',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/public_health',
   );
   db_insert('ccle_redirect')
@@ -1981,8 +1981,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'EPIDEM',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/epi',
   );
   db_insert('ccle_redirect')
@@ -1992,8 +1992,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ETHNOMU',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/ethno',
   );
   db_insert('ccle_redirect')
@@ -2003,8 +2003,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'FAMMED',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2014,8 +2014,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'FILIPNO',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/southeast-asia',
   );
   db_insert('ccle_redirect')
@@ -2025,8 +2025,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'FILMTV',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/film',
   );
   db_insert('ccle_redirect')
@@ -2036,8 +2036,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'FRNCH',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/french',
   );
   db_insert('ccle_redirect')
@@ -2047,8 +2047,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'GENDER',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/women',
   );
   db_insert('ccle_redirect')
@@ -2058,9 +2058,9 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'GECLST',
-    'crsidx'     => '-',
-    'classidx'     => '-',
-    'lib_guide'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
+    'lib_guide'     => '',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -2069,8 +2069,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'GEOG',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/geography',
   );
   db_insert('ccle_redirect')
@@ -2080,8 +2080,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'GERMAN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/german',
   );
   db_insert('ccle_redirect')
@@ -2091,8 +2091,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'GRNTLGY',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/social-welfare',
   );
   db_insert('ccle_redirect')
@@ -2102,8 +2102,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'GLBLST',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/global-guides',
   );
   db_insert('ccle_redirect')
@@ -2113,8 +2113,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'GREEK',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/classics',
   );
   db_insert('ccle_redirect')
@@ -2124,8 +2124,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'HLTPOL',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/healthservices',
   );
   db_insert('ccle_redirect')
@@ -2135,8 +2135,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'HEBREW',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/jewish',
   );
   db_insert('ccle_redirect')
@@ -2146,8 +2146,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'HIN-URD',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/south-asia',
   );
   db_insert('ccle_redirect')
@@ -2157,8 +2157,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'HIST',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/history',
   );
   db_insert('ccle_redirect')
@@ -2168,9 +2168,9 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'HNRS',
-    'crsidx'     => '-',
-    'classidx'     => '-',
-    'lib_guide'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
+    'lib_guide'     => '',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -2179,8 +2179,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'HUMGEN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/genetics_genomics',
   );
   db_insert('ccle_redirect')
@@ -2190,8 +2190,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'HUNGRN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/slavic',
   );
   db_insert('ccle_redirect')
@@ -2201,8 +2201,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ILA',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/indigenous-literatures',
   );
   db_insert('ccle_redirect')
@@ -2212,8 +2212,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'IESTD',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/linguistics',
   );
   db_insert('ccle_redirect')
@@ -2223,8 +2223,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'INDO',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/southeast-asia',
   );
   db_insert('ccle_redirect')
@@ -2234,8 +2234,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'INFSTD',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/information-studies',
   );
   db_insert('ccle_redirect')
@@ -2245,8 +2245,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'IASTD',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/global-guides',
   );
   db_insert('ccle_redirect')
@@ -2256,8 +2256,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'INTLDV',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/global-guides',
   );
   db_insert('ccle_redirect')
@@ -2267,8 +2267,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'IRANIAN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/mideast',
   );
   db_insert('ccle_redirect')
@@ -2278,8 +2278,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ISLAMIC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/mideast',
   );
   db_insert('ccle_redirect')
@@ -2289,8 +2289,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ISLMST',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/mideast',
   );
   db_insert('ccle_redirect')
@@ -2300,8 +2300,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ITALIAN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/italian',
   );
   db_insert('ccle_redirect')
@@ -2311,8 +2311,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'JAPAN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/japanese',
   );
   db_insert('ccle_redirect')
@@ -2322,8 +2322,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'JEWISH',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/jewish',
   );
   db_insert('ccle_redirect')
@@ -2333,8 +2333,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'KOREA',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/korean',
   );
   db_insert('ccle_redirect')
@@ -2344,9 +2344,9 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'LBR&WS',
-    'crsidx'     => '-',
-    'classidx'     => '-',
-    'lib_guide'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
+    'lib_guide'     => '',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -2355,8 +2355,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'LATIN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/classics',
   );
   db_insert('ccle_redirect')
@@ -2366,8 +2366,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'LATNAM',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/latin-america',
   );
   db_insert('ccle_redirect')
@@ -2377,8 +2377,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'LAW',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://libguides.law.ucla.edu/',
   );
   db_insert('ccle_redirect')
@@ -2388,8 +2388,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'UG-LAW',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://libguides.law.ucla.edu/',
   );
   db_insert('ccle_redirect')
@@ -2399,8 +2399,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'LGBTS',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/lgbt',
   );
   db_insert('ccle_redirect')
@@ -2410,8 +2410,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'LIFESCI',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/life_sciences',
   );
   db_insert('ccle_redirect')
@@ -2421,8 +2421,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'LING',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/linguistics',
   );
   db_insert('ccle_redirect')
@@ -2432,8 +2432,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'LITHUAN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/slavic',
   );
   db_insert('ccle_redirect')
@@ -2443,8 +2443,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MGMT',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => '???',
   );
   db_insert('ccle_redirect')
@@ -2454,8 +2454,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MATSCI',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/mse',
   );
   db_insert('ccle_redirect')
@@ -2465,8 +2465,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MATH',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/math',
   );
   db_insert('ccle_redirect')
@@ -2476,8 +2476,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MECH&AE',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/content.php?pid=57693',
   );
   db_insert('ccle_redirect')
@@ -2487,8 +2487,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MECH&AE',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/content.php?pid=57705',
   );
   db_insert('ccle_redirect')
@@ -2498,8 +2498,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MEDHIS',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/history-of-science',
   );
   db_insert('ccle_redirect')
@@ -2509,8 +2509,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MED',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2520,8 +2520,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MIMG',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/life_sciences',
   );
   db_insert('ccle_redirect')
@@ -2531,8 +2531,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MESTD',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/mideast',
   );
   db_insert('ccle_redirect')
@@ -2542,9 +2542,9 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MILSCI',
-    'crsidx'     => '-',
-    'classidx'     => '-',
-    'lib_guide'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
+    'lib_guide'     => '',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -2553,8 +2553,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MPHARM',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2564,8 +2564,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MOLBIO',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/life_sciences',
   );
   db_insert('ccle_redirect')
@@ -2575,8 +2575,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MCDBIO',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/life_sciences',
   );
   db_insert('ccle_redirect')
@@ -2586,8 +2586,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MC&IP',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2597,8 +2597,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MOLTOX',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/public_health',
   );
   db_insert('ccle_redirect')
@@ -2608,8 +2608,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MIASTD',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/film',
   );
   db_insert('ccle_redirect')
@@ -2619,8 +2619,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MUSIC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/music-guides',
   );
   db_insert('ccle_redirect')
@@ -2630,8 +2630,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MUSHST',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/music-guides',
   );
   db_insert('ccle_redirect')
@@ -2641,8 +2641,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MUSIND',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/music-guides',
   );
   db_insert('ccle_redirect')
@@ -2652,8 +2652,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'MUSCLGY',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/music-guides',
   );
   db_insert('ccle_redirect')
@@ -2663,9 +2663,9 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'NAVSCI',
-    'crsidx'     => '-',
-    'classidx'     => '-',
-    'lib_guide'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
+    'lib_guide'     => '',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -2674,8 +2674,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'NREAST',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/mideast',
   );
   db_insert('ccle_redirect')
@@ -2685,8 +2685,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'NEURBIO',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2696,8 +2696,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'NEURLGY',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2707,8 +2707,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'NEUROSC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/life_sciences',
   );
   db_insert('ccle_redirect')
@@ -2718,8 +2718,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'NEURO',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2729,8 +2729,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'NEURSGY',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2740,8 +2740,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'NURSING',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/nursing',
   );
   db_insert('ccle_redirect')
@@ -2751,8 +2751,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'OBGYN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2762,8 +2762,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'OPTH',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2773,8 +2773,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ORLBIO',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/dentistry',
   );
   db_insert('ccle_redirect')
@@ -2784,8 +2784,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ORTHPDC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2795,8 +2795,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'PATH',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2806,8 +2806,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'PEDS',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2817,8 +2817,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'PHILOS',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/philosophy',
   );
   db_insert('ccle_redirect')
@@ -2828,8 +2828,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'PHYSICS',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/physics',
   );
   db_insert('ccle_redirect')
@@ -2839,8 +2839,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'PHYSCI',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/life_sciences',
   );
   db_insert('ccle_redirect')
@@ -2850,8 +2850,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'PHYSIOL',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2861,8 +2861,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'POLISH',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/slavic',
   );
   db_insert('ccle_redirect')
@@ -2872,8 +2872,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'POLSCI',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/polisci',
   );
   db_insert('ccle_redirect')
@@ -2883,8 +2883,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'PORTGSE',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/spanish',
   );
   db_insert('ccle_redirect')
@@ -2894,8 +2894,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'COMPTNG',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/cs',
   );
   db_insert('ccle_redirect')
@@ -2905,8 +2905,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'PSYCTRY',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2916,8 +2916,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'PSYCH',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/psychology',
   );
   db_insert('ccle_redirect')
@@ -2927,8 +2927,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'PUBHLT',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/public_health',
   );
   db_insert('ccle_redirect')
@@ -2938,8 +2938,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'PUBPLC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/public-policy',
   );
   db_insert('ccle_redirect')
@@ -2949,8 +2949,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'RADONC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -2960,8 +2960,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'RELIGN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/religion',
   );
   db_insert('ccle_redirect')
@@ -2971,8 +2971,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'ROMAN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/slavic',
   );
   db_insert('ccle_redirect')
@@ -2982,8 +2982,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'RUSSIAN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/slavic',
   );
   db_insert('ccle_redirect')
@@ -2993,8 +2993,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'SCAND',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/scandinavian',
   );
   db_insert('ccle_redirect')
@@ -3004,8 +3004,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'SCIEDU',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/education',
   );
   db_insert('ccle_redirect')
@@ -3015,8 +3015,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'SEMITIC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/mideast',
   );
   db_insert('ccle_redirect')
@@ -3026,8 +3026,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'SERCRO',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/slavic',
   );
   db_insert('ccle_redirect')
@@ -3037,8 +3037,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'SLAVIC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/slavic',
   );
   db_insert('ccle_redirect')
@@ -3048,8 +3048,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'SOCTHT',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/philosophy',
   );
   db_insert('ccle_redirect')
@@ -3059,8 +3059,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'SOCWLF',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/social-welfare',
   );
   db_insert('ccle_redirect')
@@ -3070,9 +3070,9 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'SOCGEN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
-    'lib_guide'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
+    'lib_guide'     => '',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -3081,8 +3081,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'SOCIOL',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/sociology',
   );
   db_insert('ccle_redirect')
@@ -3092,8 +3092,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'SASIAN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/south-asia',
   );
   db_insert('ccle_redirect')
@@ -3103,8 +3103,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'SEASIAN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/southeast-asia',
   );
   db_insert('ccle_redirect')
@@ -3114,8 +3114,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'SPAN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/spanish',
   );
   db_insert('ccle_redirect')
@@ -3125,8 +3125,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'STATS',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/stat',
   );
   db_insert('ccle_redirect')
@@ -3136,8 +3136,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'SURGERY',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -3147,8 +3147,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'THAI',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/southeast-asia',
   );
   db_insert('ccle_redirect')
@@ -3158,8 +3158,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'THEATER',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/theater',
   );
   db_insert('ccle_redirect')
@@ -3169,8 +3169,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'TURKIC',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/mideast',
   );
   db_insert('ccle_redirect')
@@ -3180,8 +3180,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'UKRAIN',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/slavic',
   );
   db_insert('ccle_redirect')
@@ -3191,8 +3191,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'URBNPL',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/urban-planning',
   );
   db_insert('ccle_redirect')
@@ -3202,8 +3202,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'UROLOGY',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/medicine',
   );
   db_insert('ccle_redirect')
@@ -3213,8 +3213,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'VIETMSE',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/southeast-asia',
   );
   db_insert('ccle_redirect')
@@ -3224,8 +3224,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'WLARTS',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/wac-guides',
   );
   db_insert('ccle_redirect')
@@ -3235,8 +3235,8 @@ function ccle_redirect_install() {
     $fields = array(
     'term'    => '14W',
     'subj_area' => 'YIDDSH',
-    'crsidx'     => '-',
-    'classidx'     => '-',
+    'crsidx'     => '',
+    'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/jewish',
   );
   db_insert('ccle_redirect')
