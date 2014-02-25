@@ -52,31 +52,31 @@ $error_term = t('No Lib-Guides for this term have been added yet.'); // display 
 foreach ($rows as $row) {
 // Sanitize the data before handing it off to the theme layer.
     if( $row['term'] == $myvar0 ){
-print_r('TERM');
+//print_r('TERM');
         $error_term = '';
         if( strlen( $row['crsidx'] ) > 0 ){
-print_r(' crsidx > 0 ');
+//print_r(' crsidx > 0 ');
             if( $row['crsidx'] == $myvar2 ){
-print_r(' crsidx_db = crsidx_ccle ');
+//print_r(' crsidx_db = crsidx_ccle ');
                 if( strlen( $row['classidx'] ) > 0 ){
-print_r(' classidx>0='.strlen( $row['classidx'].' ') );
+//print_r(' classidx>0='.strlen( $row['classidx'].' ') );
                     if( $row['classidx'] == $myvar3 ){
-print_r(' classidx_db = classidx_ccle ');
+//print_r(' classidx_db = classidx_ccle ');
                     $rd_class = $row['lib_guide'];
 //                    drupal_goto($path = $row['lib_guide']);
                     } else{
-print_r(' classidx_db <> classidx_ccle ');
+//print_r(' classidx_db <> classidx_ccle ');
                     }
                 } else {
-print_r(' classidx = 0 ');
+//print_r(' classidx = 0 ');
                     $rd_crs = $row['lib_guide'];
                 }
             } else {
-print_r(' crsidx_db = crsidx_ccle ');
+//print_r(' crsidx_db = crsidx_ccle ');
                 $rd_subj = $row['lib_guide'];
             }
         } else {
-print_r(' crsidx = 0 ');
+//print_r(' crsidx = 0 ');
             $rd_subj = $row['lib_guide'];
         }
     }
@@ -129,13 +129,3 @@ $result=$query->execute();
 
 return $result;
 }
-
-//<?php
-//    $result = db_select('node', 'n')
-//    ->fields('n')
-//    ->condition('nid', $node->nid,'=')
-//    ->condition('status', 0,'>')
-//    ->condition('uid', array(1,5,7),'IN')
-//    ->execute()
-//    ->fetchAssoc();
-//?>
