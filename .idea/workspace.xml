@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d619cad0-7514-45b2-bf20-26bebd89f402" name="Default" comment="simple case">
+    <list default="true" id="d619cad0-7514-45b2-bf20-26bebd89f402" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ccle_redirect.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393288638032" ignored="false" />
+    <file path="/Dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393288650061" ignored="false" />
     <file path="/ccle_redirect.module" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393060668188" ignored="false" />
     <file path="/dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1392708569702" ignored="false" />
     <file path="/ccle_redirect.install" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393010527435" ignored="false" />
@@ -722,7 +722,11 @@
       <created>1393287897962</created>
       <updated>1393287897962</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="simple case">
+      <created>1393288665992</created>
+      <updated>1393288665992</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
