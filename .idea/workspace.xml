@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d619cad0-7514-45b2-bf20-26bebd89f402" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ccle_redirect.install" afterPath="$PROJECT_DIR$/ccle_redirect.install" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ccle_redirect.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393264439885" ignored="false" />
+    <file path="/Dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393287451671" ignored="false" />
     <file path="/ccle_redirect.module" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393060668188" ignored="false" />
     <file path="/dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1392708569702" ignored="false" />
     <file path="/ccle_redirect.install" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393010527435" ignored="false" />
@@ -31,19 +30,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ccle_redirect.module" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ccle_redirect.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ccle_redirect.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="0" selection-start="2497" selection-end="2497" vertical-scroll-proportion="-32.541668">
+            <state line="84" column="0" selection-start="2497" selection-end="2497" vertical-scroll-proportion="1.3043479">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ccle_redirect.install" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ccle_redirect.install" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ccle_redirect.install">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="198" column="0" selection-start="4702" selection-end="4702" vertical-scroll-proportion="3.0">
+            <state line="198" column="0" selection-start="4702" selection-end="4702" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -711,7 +710,11 @@
       <created>1393264445038</created>
       <updated>1393264445038</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="simple case">
+      <created>1393287454757</created>
+      <updated>1393287454757</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -945,16 +948,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ccle_redirect.module">
+    <entry file="file://$PROJECT_DIR$/ccle_redirect.install">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2497" selection-end="2497" vertical-scroll-proportion="-32.541668">
+        <state line="198" column="0" selection-start="4702" selection-end="4702" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ccle_redirect.install">
+    <entry file="file://$PROJECT_DIR$/ccle_redirect.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="0" selection-start="4702" selection-end="4702" vertical-scroll-proportion="3.0">
+        <state line="84" column="0" selection-start="2497" selection-end="2497" vertical-scroll-proportion="1.3043479">
           <folding />
         </state>
       </provider>
