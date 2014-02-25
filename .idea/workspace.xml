@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d619cad0-7514-45b2-bf20-26bebd89f402" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ccle_redirect.module" afterPath="$PROJECT_DIR$/ccle_redirect.module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ccle_redirect.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393350905896" ignored="false" />
+    <file path="/Dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393367900263" ignored="false" />
     <file path="/ccle_redirect.module" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393060668188" ignored="false" />
     <file path="/dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1392708569702" ignored="false" />
     <file path="/ccle_redirect.install" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393010527435" ignored="false" />
@@ -34,7 +33,7 @@
       <file leaf-file-name="ccle_redirect.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ccle_redirect.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="21" selection-start="2804" selection-end="2815" vertical-scroll-proportion="0.7674074">
+            <state line="91" column="21" selection-start="2804" selection-end="2815" vertical-scroll-proportion="0.76968795">
               <folding />
             </state>
           </provider>
@@ -744,7 +743,11 @@
       <created>1393289998570</created>
       <updated>1393289998570</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="simple case">
+      <created>1393367909636</created>
+      <updated>1393367909636</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -771,6 +774,7 @@
     <frame x="-2" y="-3" width="1604" height="872" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284169" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284169" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -785,7 +789,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32940018" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284169" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -949,7 +952,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ccle_redirect.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="21" selection-start="2804" selection-end="2815" vertical-scroll-proportion="0.7674074">
+        <state line="91" column="21" selection-start="2804" selection-end="2815" vertical-scroll-proportion="0.76968795">
           <folding />
         </state>
       </provider>
