@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d619cad0-7514-45b2-bf20-26bebd89f402" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ccle_redirect.install" afterPath="$PROJECT_DIR$/ccle_redirect.install" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ccle_redirect.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393288739589" ignored="false" />
+    <file path="/Dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393289276925" ignored="false" />
     <file path="/ccle_redirect.module" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393060668188" ignored="false" />
     <file path="/dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1392708569702" ignored="false" />
     <file path="/ccle_redirect.install" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393010527435" ignored="false" />
@@ -39,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ccle_redirect.install" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ccle_redirect.install" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ccle_redirect.install">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="18" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+            <state line="22" column="18" selection-start="562" selection-end="562" vertical-scroll-proportion="0.10606061">
               <folding />
             </state>
           </provider>
@@ -57,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ccle_link.pl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ccle_link.pl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ccle_data/ccle_link.pl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="0.22727273">
+            <state line="15" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -748,7 +749,11 @@
       <created>1393288742092</created>
       <updated>1393288742092</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="simple case">
+      <created>1393289278674</created>
+      <updated>1393289278674</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -975,13 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ccle_redirect.install">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="18" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ccle_redirect.install.works.bak">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -991,7 +989,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../ccle_data/ccle_link.pl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="0.22727273">
+        <state line="15" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ccle_redirect.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="18" selection-start="562" selection-end="562" vertical-scroll-proportion="0.10606061">
           <folding />
         </state>
       </provider>
