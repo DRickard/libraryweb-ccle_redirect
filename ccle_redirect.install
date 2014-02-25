@@ -1,6 +1,6 @@
-<?php	
+<?php
 /**
- * @file
+ * 
  * Install, update and uninstall functions for the ccle_redirect module.
  */
 
@@ -12,8 +12,8 @@
  *
  * We will create a default entry in the database.
  *
- * @see hook_install()
- * @ingroup ccle
+ *  hook_install()
+ *  ccle
  */
 function ccle_redirect_install() {
   // Outside of the .install file we would use drupal_write_record() to
@@ -28,164 +28,3222 @@ function ccle_redirect_install() {
     'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
-    ->fields($fields)
+    ->fields()
     ->execute();
 
-  $fields = array(
+    $fields = array(
     'term'    => '14W',
-    'subj_area' => 'ANTHRO',
-    'crsidx'     => '0121C',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
     'classidx'     => '',
-    'lib_guide'     => 'http://guides.library.ucla.edu/anthro121c',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
-    ->fields($fields)
+    ->fields()
     ->execute();
 
-  $fields = array(
+    $fields = array(
     'term'    => '14W',
-    'subj_area' => 'ANTHRO',
-    'crsidx'     => '0128A',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
     'classidx'     => '',
-    'lib_guide'     => 'http://guides.library.ucla.edu/anthro128a',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
-    ->fields($fields)
+    ->fields()
     ->execute();
 
-  $fields = array(
+    $fields = array(
     'term'    => '14W',
-    'subj_area' => 'ANTHRO',
-    'crsidx'     => '0008',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
     'classidx'     => '',
-    'lib_guide'     => 'http://guides.library.ucla.edu/anthro8',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
-    ->fields($fields)
+    ->fields()
     ->execute();
 
-  $fields = array(
+    $fields = array(
     'term'    => '14W',
-    'subj_area' => 'ASIAN',
-    'crsidx'     => '0060WM',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
     'classidx'     => '',
-    'lib_guide'     => 'http://guides.library.ucla.edu/asia',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
-    ->fields($fields)
+    ->fields()
     ->execute();
 
-  $fields = array(
+    $fields = array(
     'term'    => '14W',
-    'subj_area' => 'ASIAN',
-    'crsidx'     => '0060WM',
-    'classidx'     => '001',
-    'lib_guide'     => 'http://guides.library.ucla.edu/asian60w',
-  );
-  db_insert('ccle_redirect')
-    ->fields($fields)
-    ->execute();
-
-  $fields = array(
-    'term'    => '14W',
-    'subj_area' => 'RELIGN',
-    'crsidx'     => '0060WM',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
     'classidx'     => '',
-    'lib_guide'     => 'http://guides.library.ucla.edu/asian60w',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
-    ->fields($fields)
+    ->fields()
     ->execute();
 
-  $fields = array(
+    $fields = array(
     'term'    => '14W',
-    'subj_area' => 'CHEM',
-    'crsidx'     => '0030AL',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
     'classidx'     => '',
-    'lib_guide'     => 'http://guides.library.ucla.edu/chem30al',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
-    ->fields($fields)
+    ->fields()
     ->execute();
 
-  $fields = array(
+    $fields = array(
     'term'    => '14W',
-    'subj_area' => 'CHEM',
-    'crsidx'     => '0030BL',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
     'classidx'     => '',
-    'lib_guide'     => 'http://guides.library.ucla.edu/chem30bl',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
-    ->fields($fields)
+    ->fields()
     ->execute();
 
-  $fields = array(
+    $fields = array(
     'term'    => '14W',
-    'subj_area' => 'CHEM',
-    'crsidx'     => '0030CL',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
     'classidx'     => '',
-    'lib_guide'     => 'http://guides.library.ucla.edu/chem30cl',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
-    ->fields($fields)
+    ->fields()
     ->execute();
 
-  $fields = array(
+    $fields = array(
     'term'    => '14W',
-    'subj_area' => 'COMMST',
-    'crsidx'     => '0103A',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
     'classidx'     => '',
-    'lib_guide'     => 'http://guides.library.ucla.edu/commstudies103',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
-    ->fields($fields)
+    ->fields()
     ->execute();
 
-  $fields = array(
+    $fields = array(
     'term'    => '14W',
-    'subj_area' => 'COMMST',
-    'crsidx'     => '0010',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
     'classidx'     => '',
-    'lib_guide'     => 'http://guides.library.ucla.edu/commstud10',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
-    ->fields($fields)
+    ->fields()
     ->execute();
 
-  $fields = array(
+    $fields = array(
     'term'    => '14W',
-    'subj_area' => 'ENGCOMP',
-    'crsidx'     => '0003',
-    'classidx'     => '001',
-    'lib_guide'     => 'http://guides.library.ucla.edu/english3',
-  );
-  db_insert('ccle_redirect')
-    ->fields($fields)
-    ->execute();
-
-  $fields = array(
-    'term'    => '14W',
-    'subj_area' => 'EDUC',
-    'crsidx'     => '0178CM',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
     'classidx'     => '',
-    'lib_guide'     => 'http://guides.library.ucla.edu/ws178',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
-    ->fields($fields)
+    ->fields()
     ->execute();
 
-  $fields = array(
+    $fields = array(
     'term'    => '14W',
-    'subj_area' => 'GENDER',
-    'crsidx'     => '0178LCM',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
     'classidx'     => '',
-    'lib_guide'     => 'http://guides.library.ucla.edu/ws178',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
   );
   db_insert('ccle_redirect')
-    ->fields($fields)
+    ->fields()
     ->execute();
 
-}
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'ANNEA',
+    'crsidx'     => '0010W',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/annea10',
+  );
+  db_insert('ccle_redirect')
+    ->fields()
+    ->execute();
+
+    }
 
 /**
  * Implements hook_uninstall().
@@ -193,8 +3251,8 @@ function ccle_redirect_install() {
  * As in hook_install, there is no need to uninstall schema, Drupal will do it
  * for us.
  *
- * @see hook_uninstall()
- * @ingroup ccle
+ *  hook_uninstall()
+ *  ccle
  */
 function ccle_redirect_uninstall() {
   // nothing.
@@ -206,10 +3264,10 @@ function ccle_redirect_uninstall() {
  *
  * Defines the database tables used by this module.
  * Remember that the easiest way to create the code for hook_schema is with
- * the @link http://drupal.org/project/schema schema module @endlink
+ * the  http://drupal.org/project/schema schema module 
  *
- * @see hook_schema()
- * @ingroup ccle
+ *  hook_schema()
+ *  ccle
  */
 function ccle_redirect_schema() {
 
@@ -267,4 +3325,3 @@ function ccle_redirect_schema() {
 
   return $schema;
 }
-
