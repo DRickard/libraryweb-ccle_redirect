@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d619cad0-7514-45b2-bf20-26bebd89f402" name="Default" comment="">
+    <list default="true" id="d619cad0-7514-45b2-bf20-26bebd89f402" name="Default" comment="simple case">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ccle_redirect.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393287614670" ignored="false" />
+    <file path="/Dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393288638032" ignored="false" />
     <file path="/ccle_redirect.module" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393060668188" ignored="false" />
     <file path="/dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1392708569702" ignored="false" />
     <file path="/ccle_redirect.install" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393010527435" ignored="false" />
@@ -33,7 +33,7 @@
       <file leaf-file-name="ccle_redirect.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ccle_redirect.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="0" selection-start="2497" selection-end="2497" vertical-scroll-proportion="1.3043479">
+            <state line="30" column="0" selection-start="889" selection-end="889" vertical-scroll-proportion="0.46583852">
               <folding />
             </state>
           </provider>
@@ -718,7 +718,11 @@
       <created>1393287616220</created>
       <updated>1393287616220</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="simple case">
+      <created>1393287897962</created>
+      <updated>1393287897962</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -961,7 +965,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ccle_redirect.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2497" selection-end="2497" vertical-scroll-proportion="1.3043479">
+        <state line="30" column="0" selection-start="889" selection-end="889" vertical-scroll-proportion="0.46583852">
           <folding />
         </state>
       </provider>
