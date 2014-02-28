@@ -30,6 +30,7 @@ function ccle_redirect_list() {
     $myvar3 = str_replace('%20', '', $myvar3);
 
 //    krumo($_GET);
+
 //    krumo($myvar0);
 
 
