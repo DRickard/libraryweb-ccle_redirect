@@ -14,120 +14,101 @@ function ccle_redirect_menu() {
 
 function ccle_redirect_list() {
 
-    $myvar0 = $_GET['c0']['t'];
-    $myvar1 = $_GET['c0']['sub'];
-    $myvar2 = $_GET['c0']['cat'];
-    $myvar3 = $_GET['c0']['sec'];
+    $term_submitted = $_GET['c0']['t'];
+    $subject_submitted = $_GET['c0']['sub'];
+    $category_submitted = $_GET['c0']['cat'];
+    $section_submitted = $_GET['c0']['sec'];
 
-    $myvar0 = str_replace(' ', '', $myvar0);
-    $myvar1 = str_replace(' ', '', $myvar1);
-    $myvar2 = str_replace(' ', '', $myvar2);
-    $myvar3 = str_replace(' ', '', $myvar3);
+    $term_submitted = str_replace(' ', '', $term_submitted);
+    $subject_submitted = str_replace(' ', '', $subject_submitted);
+    $category_submitted = str_replace(' ', '', $category_submitted);
+    $section_submitted = str_replace(' ', '', $section_submitted);
 
-    $myvar0 = str_replace('%20', '', $myvar0);
-    $myvar1 = str_replace('%20', '', $myvar1);
-    $myvar2 = str_replace('%20', '', $myvar2);
-    $myvar3 = str_replace('%20', '', $myvar3);
+    $term_submitted = str_replace('%20', '', $term_submitted);
+    $subject_submitted = str_replace('%20', '', $subject_submitted);
+    $category_submitted = str_replace('%20', '', $category_submitted);
+    $section_submitted = str_replace('%20', '', $section_submitted);
 
 //    krumo($_GET);
-
-
-//    krumo($myvar0);
-
+//    krumo($term_submitted);
 
   $output = '';
 
   // Get all entries in the rc_res_rules table.
-  if ($entries = ccle_redirect_entry_load($myvar1)) {
+  if ($entries = ccle_redirect_entry_load($subject_submitted)) {
     $rows = array();
     foreach ($entries as $entry) {
-//krumo($entry);
-      // Sanitize the data before handing it off to the theme layer.
+    // Sanitize the data before handing it off to the theme layer.
     $rows[] = array_map('check_plain', (array) $entry);
     }
 
-$error_term = t('No Lib-Guides for this term have been added yet.'); // display on _menu page to user
+    $error_term = t('No Lib-Guides for this term have been added yet.'); // display on _menu page to user
 
-      $rd_subj = '';
-      $rd_crs = '';
-      $rd_class = '';
-foreach ($rows as $row) {
-// Sanitize the data before handing it off to the theme layer.
-    if( $row['term'] == $myvar0 ){
-//print_r('TERM');
-        $error_term = '';
-        if( strlen( $row['crsidx'] ) > 0 ){
-//print_r(' crsidx > 0 ');
-            if( $row['crsidx'] == $myvar2 ){
-//print_r(' crsidx_db = crsidx_ccle ');
-                if( strlen( $row['classidx'] ) > 0 ){
-//print_r(' classidx>0='.strlen( $row['classidx'].' ') );
-                    if( $row['classidx'] == $myvar3 ){
-//print_r(' classidx_db = classidx_ccle ');
-                    $rd_class = $row['lib_guide'];
-//                    drupal_goto($path = $row['lib_guide']);
-                    } else{
-//print_r(' classidx_db <> classidx_ccle ');
+    $rd_subj = '';
+    $rd_crs = '';
+    $rd_class = '';
+    foreach ($rows as $row) {
+        if( $row['term'] == $term_submitted ){
+            $error_term = '';
+            if( strlen( $row['crsidx'] ) > 0 ){
+                if( $row['crsidx'] == $category_submitted ){
+                    if( strlen( $row['classidx'] ) > 0 ){
+                        if( $row['classidx'] == $section_submitted ){
+                            $rd_class = $row['lib_guide'];
+                        } else{
+                        }
+                    } else {
+                        $rd_crs = $row['lib_guide'];
                     }
                 } else {
-//print_r(' classidx = 0 ');
-                    $rd_crs = $row['lib_guide'];
+                    $rd_subj = $row['lib_guide'];
                 }
             } else {
-//print_r(' crsidx_db = crsidx_ccle ');
                 $rd_subj = $row['lib_guide'];
             }
-        } else {
-//print_r(' crsidx = 0 ');
-            $rd_subj = $row['lib_guide'];
         }
     }
-}
 
+    // cycle through redirect_subj, crs and class and branch accordingly
+    if( strlen( $rd_class ) > 0 ){
+        drupal_goto( $path = $rd_class );
+    } elseif( strlen( $rd_crs ) > 0 ) {
+        drupal_goto( $path = $rd_crs );
+    } elseif ( strlen( $rd_subj ) > 0 ) {
+        drupal_goto( $path = $rd_subj );
+    } else {
+        $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
+    }
 
-// cycle through redirect_subj, crs and class and branch accordingly
-      if( strlen( $rd_class ) > 0 ){
-          drupal_goto( $path = $rd_class );
-      } elseif( strlen( $rd_crs ) > 0 ) {
-          drupal_goto( $path = $rd_crs );
-      } elseif ( strlen( $rd_subj ) > 0 ) {
-          drupal_goto( $path = $rd_subj );
-      } else {
-          $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
-      }
-
-
+    // test only, this will not display if the rediect happens
     // Make a table for them.
     $header = array(t('Pid'), t('term'), t('subj_area'), t('crsidx'), t('classidx'), t('lib_guide'));
     $output .= theme('table', array('header' => $header, 'rows' => $rows));
   } else {
         $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
-//    drupal_set_message(t('No Lib-Guides have been added yet.')); // display on _menu page to user
+        //drupal_set_message(t('No Lib-Guides have been added yet.')); // display on _menu page to user
   }
-  $output .= 'myVars = '.$myvar0.' '.$myvar1.' '.$myvar2.' '.$myvar3.' === '.$rd_subj.' '.$rd_crs.' '.$rd_class;
-  return $output;
+$output .= 'myVars = '.$term_submitted.' '.$subject_submitted.' '.$category_submitted.' '.$section_submitted.' === '.$rd_subj.' '.$rd_crs.' '.$rd_class;
+return $output;
 }
-
 
 /**
  * Read from the database using a filter array.
  *
  */
 function ccle_redirect_entry_load($entry = array()) {
-//    print_r("===>".$entry);
-// Read all fields from the rc_res_rules table.
-$query = db_select('ccle_redirect','u');
-$query
-->condition('u.subj_area',$entry,'=')
-->fields('u',array('pid','term','subj_area','crsidx','classidx','lib_guide'))
-->range(0,50);
-$result=$query->execute();
-//print_r($result);
+    //print_r("===>".$entry);
+    //Read all fields from the rc_res_rules table.
+    $query = db_select('ccle_redirect','u');
+    $query
+    ->condition('u.subj_area',$entry,'=')
+    ->fields('u',array('pid','term','subj_area','crsidx','classidx','lib_guide'))
+    ->range(0,50);
+    $result=$query->execute();
 
-//    while( $record = $result->fetchAssoc() ) {
-//        print_r($record);
-//    }
-
-
+    //print_r($result);
+    //    while( $record = $result->fetchAssoc() ) {
+    //        print_r($record);
+    //    }
 return $result;
 }

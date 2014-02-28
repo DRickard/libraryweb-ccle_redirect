@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d619cad0-7514-45b2-bf20-26bebd89f402" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ccle_redirect.module" afterPath="$PROJECT_DIR$/ccle_redirect.module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ccle_redirect.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393367900263" ignored="false" />
+    <file path="/Dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393614179387" ignored="false" />
     <file path="/ccle_redirect.module" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393060668188" ignored="false" />
     <file path="/dummy.txt" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1392708569702" ignored="false" />
     <file path="/ccle_redirect.install" changelist="d619cad0-7514-45b2-bf20-26bebd89f402" time="1393010527435" ignored="false" />
@@ -33,7 +34,7 @@
       <file leaf-file-name="ccle_redirect.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ccle_redirect.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="21" selection-start="2804" selection-end="2815" vertical-scroll-proportion="0.76968795">
+            <state line="113" column="1" selection-start="4045" selection-end="4045" vertical-scroll-proportion="0.890625">
               <folding />
             </state>
           </provider>
@@ -92,10 +93,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Unnamed" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
+    <option name="x" value="1598" />
     <option name="y" value="-3" />
     <option name="width" value="1604" />
-    <option name="height" value="872" />
+    <option name="height" value="1172" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -137,17 +138,17 @@
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ccle_data/ccle_link.pl" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ccle_redirect.module" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="153" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1062" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1062" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1062" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="153" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="147" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -747,7 +748,11 @@
       <created>1393367909636</created>
       <updated>1393367909636</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="simple case">
+      <created>1393614188330</created>
+      <updated>1393614188330</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -771,14 +776,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-3" width="1604" height="872" extended-state="6" />
+    <frame x="1598" y="-3" width="1604" height="1172" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284169" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284169" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27348778" sideWeight="0.6715831" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2773488" sideWeight="0.6715831" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26516128" sideWeight="0.67026496" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -950,13 +955,6 @@
         <state line="152" column="31" selection-start="5614" selection-end="5647" vertical-scroll-proportion="0.2759706" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ccle_redirect.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="21" selection-start="2804" selection-end="2815" vertical-scroll-proportion="0.76968795">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../rc_res/rc_res.module">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1715" column="71" selection-start="69173" selection-end="69242" vertical-scroll-proportion="0.0">
@@ -977,6 +975,13 @@
     <entry file="file://$PROJECT_DIR$/../ccle_data/ccle_link.pl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="23" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ccle_redirect.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="1" selection-start="4045" selection-end="4045" vertical-scroll-proportion="0.890625">
           <folding />
         </state>
       </provider>
