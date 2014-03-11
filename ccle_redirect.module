@@ -1,9 +1,28 @@
 <?php
-
+/**********************************************************************************************************/
+/*** CCLE Redirect Module for Drupal 7                                                                  ***/
+/**********************************************************************************************************/
+/**  LAST UPDATED 20140310                                                                               **/
+/**
+ * Parses incoming link and redirects to pre-assigned Library Research Guide (maintained by Scott Martin)
+ * If one guide is specified in the incoming link, the user is redirected straight to the LibGuide
+ * If more than one guide is specified in the incoming link, the user is redirected to a landing page that
+ *  contains one link for each LibGuide
+ *
+ * Options:
+ *
+ *  1. Setting the variable '$always_go_to_landing_page=1' will always display the landing page including the
+ *   case where only one guide is specified in the incoming link.
+ *
+ * darrowco@library.ucla.edu
+ * UCLA Library
+ *
+ */
 function ccle_redirect_menu() {
     $items = array();
+
     $items['redirect/ccle'] = array(
-        'title' => 'CCLE Request Parameters',
+        'title' => 'Available research guides:',
         'page callback' => 'ccle_redirect_list',
         'page arguments' => array(1),
         'access arguments' => array('access content'),
@@ -14,28 +33,37 @@ function ccle_redirect_menu() {
 
 function ccle_redirect_list() {
 
-    $term_submitted = $_GET['c0']['t'];
-    $subject_submitted = $_GET['c0']['sub'];
-    $category_submitted = $_GET['c0']['cat'];
-    $section_submitted = $_GET['c0']['sec'];
+    $always_go_to_landing_page = 0; // set to 1 to go to the landing page when only 1 Lib Guide is found
 
-    $term_submitted = str_replace(' ', '', $term_submitted);
-    $subject_submitted = str_replace(' ', '', $subject_submitted);
-    $category_submitted = str_replace(' ', '', $category_submitted);
-    $section_submitted = str_replace(' ', '', $section_submitted);
+    $lib_guide_count = count( $_GET )-1;
+    $header = array(t('Term'), t('Dept'), t('Class'), t('Section'), t('Library Research Guide'));
+    $multi_guide_table = array();
 
-    $term_submitted = str_replace('%20', '', $term_submitted);
-    $subject_submitted = str_replace('%20', '', $subject_submitted);
-    $category_submitted = str_replace('%20', '', $category_submitted);
-    $section_submitted = str_replace('%20', '', $section_submitted);
+    $term_submitted = array();
+    $subject_submitted = array();
+    $category_submitted = array();
+    $section_submitted = array();
+    $output = '';
 
-//    krumo($_GET);
-//    krumo($term_submitted);
+    for ($i=0; $i<$lib_guide_count; $i++){
+        $j = 'c'.$i;
+        $term_submitted[$i] = $_GET[$j]['t'];
+        $subject_submitted[$i] = $_GET[$j]['sub'];
+        $category_submitted[$i] = $_GET[$j]['cat'];
+        $section_submitted[$i] = $_GET[$j]['sec'];
 
-  $output = '';
+        $term_submitted[$i] = str_replace(' ', '', $term_submitted[$i]);
+        $subject_submitted[$i] = str_replace(' ', '', $subject_submitted[$i]);
+        $category_submitted[$i] = str_replace(' ', '', $category_submitted[$i]);
+        $section_submitted[$i] = str_replace(' ', '', $section_submitted[$i]);
+
+        $term_submitted[$i] = str_replace('%20', '', $term_submitted[$i]);
+        $subject_submitted[$i] = str_replace('%20', '', $subject_submitted[$i]);
+        $category_submitted[$i] = str_replace('%20', '', $category_submitted[$i]);
+        $section_submitted[$i] = str_replace('%20', '', $section_submitted[$i]);
 
   // Get all entries in the rc_res_rules table.
-  if ($entries = ccle_redirect_entry_load($subject_submitted)) {
+  if ($entries = ccle_redirect_entry_load($subject_submitted[$i])) {
     $rows = array();
     foreach ($entries as $entry) {
     // Sanitize the data before handing it off to the theme layer.
@@ -44,52 +72,59 @@ function ccle_redirect_list() {
 
     $error_term = t('No Lib-Guides for this term have been added yet.'); // display on _menu page to user
 
-    $rd_subj = '';
-    $rd_crs = '';
-    $rd_class = '';
+    $rd_subj[$i] = '';
+    $rd_crs[$i] = '';
+    $rd_class[$i] = '';
     foreach ($rows as $row) {
-        if( $row['term'] == $term_submitted ){
+        if( $row['term'] == $term_submitted[$i] ){
             $error_term = '';
             if( strlen( $row['crsidx'] ) > 0 ){
-                if( $row['crsidx'] == $category_submitted ){
+                if( $row['crsidx'] == $category_submitted[$i] ){
                     if( strlen( $row['classidx'] ) > 0 ){
-                        if( $row['classidx'] == $section_submitted ){
-                            $rd_class = $row['lib_guide'];
+                        if( $row['classidx'] == $section_submitted[$i] ){
+                            $rd_class[$i] = $row['lib_guide'];
                         } else{
                         }
                     } else {
-                        $rd_crs = $row['lib_guide'];
+                        $rd_crs[$i] = $row['lib_guide'];
                     }
                 } else {
-                    $rd_subj = $row['lib_guide'];
+                    $rd_subj[$i] = $row['lib_guide'];
                 }
             } else {
-                $rd_subj = $row['lib_guide'];
+                $rd_subj[$i] = $row['lib_guide'];
             }
         }
     }
 
-    // cycle through redirect_subj, crs and class and branch accordingly
-    if( strlen( $rd_class ) > 0 ){
-        drupal_goto( $path = $rd_class );
-    } elseif( strlen( $rd_crs ) > 0 ) {
-        drupal_goto( $path = $rd_crs );
-    } elseif ( strlen( $rd_subj ) > 0 ) {
-        drupal_goto( $path = $rd_subj );
+    if( $lib_guide_count + $always_go_to_landing_page  >  1 ){
+        // Make a table for them.
+        $class_guide[$i][0] = $rows[0]['term'];
+        $class_guide[$i][1] = $rows[0]['subj_area'];
+        $class_guide[$i][2] = $rows[0]['crsidx'];
+        $class_guide[$i][3] = $rows[0]['classidx'];
+        $class_guide[$i][4] = l( t($rows[0]['lib_guide']), $rows[0]['lib_guide']);
     } else {
-        $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
+        // cycle through redirect_subj, crs and class and branch accordingly
+        if( strlen( $rd_class[$i] ) > 0 ){
+        drupal_goto( $path = $rd_class[$i] );
+        } elseif( strlen( $rd_crs[$i] ) > 0 ) {
+        drupal_goto( $path = $rd_crs[$i] );
+        } elseif ( strlen( $rd_subj[$i] ) > 0 ) {
+        drupal_goto( $path = $rd_subj[$i] );
+        } else {
+            $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
+        }
     }
 
-    // test only, this will not display if the rediect happens
-    // Make a table for them.
-    $header = array(t('Pid'), t('term'), t('subj_area'), t('crsidx'), t('classidx'), t('lib_guide'));
-    $output .= theme('table', array('header' => $header, 'rows' => $rows));
   } else {
         $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
-        //drupal_set_message(t('No Lib-Guides have been added yet.')); // display on _menu page to user
+        drupal_set_message(t('No Lib-Guides have been added yet.')); // display on _menu page to user
   }
-$output .= 'myVars = '.$term_submitted.' '.$subject_submitted.' '.$category_submitted.' '.$section_submitted.' === '.$rd_subj.' '.$rd_crs.' '.$rd_class;
-return $output;
+}
+
+    $output = theme('table', array('header' => $header, 'rows' => $class_guide));
+    return $output;
 }
 
 /**
