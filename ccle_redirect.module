@@ -34,6 +34,7 @@ function ccle_redirect_menu() {
 function ccle_redirect_list() {
 
     $always_go_to_landing_page = 0; // set to 1 to go to the landing page when only 1 Lib Guide is found
+    $error_no_guide = 0; // error flag
 
     $lib_guide_count = count( $_GET )-1;
     $header = array(t('Term'), t('Dept'), t('Class'), t('Section'), t('Library Research Guide'));
@@ -43,9 +44,10 @@ function ccle_redirect_list() {
     $subject_submitted = array();
     $category_submitted = array();
     $section_submitted = array();
+    $class_guides = array();
     $output = '';
 
-    for ($i=0; $i<$lib_guide_count; $i++){
+    for ($i=0; $i<$lib_guide_count; $i++) {
         $j = 'c'.$i;
         $term_submitted[$i] = $_GET[$j]['t'];
         $subject_submitted[$i] = $_GET[$j]['sub'];
@@ -95,36 +97,68 @@ function ccle_redirect_list() {
                 $rd_subj[$i] = $row['lib_guide'];
             }
         }
-    }
 
-    if( $lib_guide_count + $always_go_to_landing_page  >  1 ){
-        // Make a table for them.
-        $class_guide[$i][0] = $rows[0]['term'];
-        $class_guide[$i][1] = $rows[0]['subj_area'];
-        $class_guide[$i][2] = $rows[0]['crsidx'];
-        $class_guide[$i][3] = $rows[0]['classidx'];
-        $class_guide[$i][4] = l( t($rows[0]['lib_guide']), $rows[0]['lib_guide']);
-    } else {
         // cycle through redirect_subj, crs and class and branch accordingly
         if( strlen( $rd_class[$i] ) > 0 ){
-        drupal_goto( $path = $rd_class[$i] );
+            $class_guides[$i][4] = $rd_class[$i];
         } elseif( strlen( $rd_crs[$i] ) > 0 ) {
-        drupal_goto( $path = $rd_crs[$i] );
+            $class_guides[$i][4] = $rd_crs[$i];
         } elseif ( strlen( $rd_subj[$i] ) > 0 ) {
-        drupal_goto( $path = $rd_subj[$i] );
+            $class_guides[$i][4] = $rd_subj[$i];
         } else {
             $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
+        }
+
+        if( $class_guides[$i][4] ){
+            $class_guides[$i][0] = $term_submitted[$i];
+            $class_guides[$i][1] = $subject_submitted[$i];
+            $class_guides[$i][2] = $category_submitted[$i];
+            $class_guides[$i][3] = $section_submitted[$i];
+        }
+    }
+
+    // go to redirect or skip this and fall through to build-a-landing page
+    if( $lib_guide_count + $always_go_to_landing_page  ==  1 ){
+        if( strlen( $class_guides[$i][4] ) > 0 ){
+            drupal_goto( $path = $class_guides[$i][4] );
+        } else {
+            $error_no_guide = t('No Lib-Guides have been added yet 0.'); // display on _menu page to user
         }
     }
 
   } else {
-        $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
-        drupal_set_message(t('No Lib-Guides have been added yet.')); // display on _menu page to user
+        $error_no_guide = t('No Lib-Guides have been added yet 1.'); // display on _menu page to user
   }
 }
 
-    $output = theme('table', array('header' => $header, 'rows' => $class_guide));
-    return $output;
+    $go_redirect = 1;
+    $nm1 = '';
+    $redirect_here = '';
+
+    foreach ($class_guides as $class_guide) {
+        krumo($class_guide[4]);
+        krumo($nm1);
+        if( $nm1 != '' ){
+            if( !strcmp('$class_guide[4]', '$nm1') ){
+krumo('go_r0');
+                $go_redirect = 0;
+            } else {
+                $redirect_here = $class_guide[4];
+            }
+        }
+        $nm1 = $class_guide[4];
+    }
+    if($go_redirect == 1 ){
+        krumo($class_guide[4]);
+        if( strlen( $redirect_here ) > 0 ){
+            drupal_goto( $path = $redirect_here );
+        } else {
+            $error_no_guide = t('No Lib-Guides have been added yet 2.'); // display on _menu page to user
+        }
+    } else {
+        $output = theme('table', array('header' => $header, 'rows' => $class_guides));
+        return $output;
+    }
 }
 
 /**
@@ -145,5 +179,8 @@ function ccle_redirect_entry_load($entry = array()) {
     //    while( $record = $result->fetchAssoc() ) {
     //        print_r($record);
     //    }
-return $result;
+
+//    drupal_set_message(t('No Lib-Guides have been added yet.')); // display on _menu page to user
+
+    return $result;
 }
