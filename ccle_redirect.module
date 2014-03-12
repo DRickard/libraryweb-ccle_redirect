@@ -85,13 +85,10 @@ function ccle_redirect_list() {
                     if( strlen( $row['classidx'] ) > 0 ){
                         if( $row['classidx'] == $section_submitted[$i] ){
                             $rd_class[$i] = $row['lib_guide'];
-                        } else{
                         }
                     } else {
                         $rd_crs[$i] = $row['lib_guide'];
                     }
-                } else {
-                    $rd_subj[$i] = $row['lib_guide'];
                 }
             } else {
                 $rd_subj[$i] = $row['lib_guide'];
@@ -109,14 +106,13 @@ function ccle_redirect_list() {
             $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
         }
 
-        if( $class_guides[$i][4] ){
+        if( strlen( $class_guides[$i][4] ) >0 ){
             $class_guides[$i][0] = $term_submitted[$i];
             $class_guides[$i][1] = $subject_submitted[$i];
             $class_guides[$i][2] = $category_submitted[$i];
             $class_guides[$i][3] = $section_submitted[$i];
         }
     }
-
     // go to redirect or skip this and fall through to build-a-landing page
     if( $lib_guide_count + $always_go_to_landing_page  ==  1 ){
         if( strlen( $class_guides[$i][4] ) > 0 ){
@@ -136,11 +132,8 @@ function ccle_redirect_list() {
     $redirect_here = '';
 
     foreach ($class_guides as $class_guide) {
-        krumo($class_guide[4]);
-        krumo($nm1);
         if( $nm1 != '' ){
             if( !strcmp('$class_guide[4]', '$nm1') ){
-krumo('go_r0');
                 $go_redirect = 0;
             } else {
                 $redirect_here = $class_guide[4];
@@ -149,7 +142,6 @@ krumo('go_r0');
         $nm1 = $class_guide[4];
     }
     if($go_redirect == 1 ){
-        krumo($class_guide[4]);
         if( strlen( $redirect_here ) > 0 ){
             drupal_goto( $path = $redirect_here );
         } else {
@@ -166,7 +158,6 @@ krumo('go_r0');
  *
  */
 function ccle_redirect_entry_load($entry = array()) {
-    //print_r("===>".$entry);
     //Read all fields from the rc_res_rules table.
     $query = db_select('ccle_redirect','u');
     $query
@@ -174,11 +165,6 @@ function ccle_redirect_entry_load($entry = array()) {
     ->fields('u',array('pid','term','subj_area','crsidx','classidx','lib_guide'))
     ->range(0,50);
     $result=$query->execute();
-
-    //print_r($result);
-    //    while( $record = $result->fetchAssoc() ) {
-    //        print_r($record);
-    //    }
 
 //    drupal_set_message(t('No Lib-Guides have been added yet.')); // display on _menu page to user
 
