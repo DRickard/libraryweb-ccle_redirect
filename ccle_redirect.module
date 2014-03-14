@@ -15,7 +15,7 @@
  *   case where only one guide is specified in the incoming link.
  *
  * darrowco@library.ucla.edu
- * UCLA Library
+ * UCLA Library.
  *
  */
 function ccle_redirect_menu() {
