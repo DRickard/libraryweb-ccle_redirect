@@ -1,3 +1,4 @@
+ok
 <?php
 /**********************************************************************************************************/
 /*** CCLE Redirect Module for Drupal 7                                                                  ***/
@@ -22,7 +23,7 @@ function ccle_redirect_menu() {
     $items = array();
 
     $items['redirect/ccle'] = array(
-        'title' => 'Available research guides:',
+        'description' => 'Available research guides:',
         'page callback' => 'ccle_redirect_list',
         'page arguments' => array(1),
         'access arguments' => array('access content'),
@@ -37,7 +38,8 @@ function ccle_redirect_list() {
     $error_no_guide = 0; // error flag
 
     $lib_guide_count = count( $_GET )-1;
-    $header = array(t('Term'), t('Dept'), t('Class'), t('Section'), t('Library Research Guide'));
+    $header = array(t('More than one guide may be useful'));
+    // $header = array(t('Term'), t('Dept'), t('Class'), t('Section'), t('Library Research Guide'));
     $multi_guide_table = array();
 
     $term_submitted = array();
@@ -45,6 +47,7 @@ function ccle_redirect_list() {
     $category_submitted = array();
     $section_submitted = array();
     $class_guides = array();
+    $class_guides_names = array();
     $output = '';
 
     for ($i=0; $i<$lib_guide_count; $i++) {
@@ -77,6 +80,7 @@ function ccle_redirect_list() {
     $rd_subj[$i] = '';
     $rd_crs[$i] = '';
     $rd_class[$i] = '';
+    $rd_guide_name[$i] = '';
     foreach ($rows as $row) {
         if( $row['term'] == $term_submitted[$i] ){
             $error_term = '';
@@ -112,6 +116,11 @@ function ccle_redirect_list() {
             $class_guides[$i][4] = $rd_subj[$i];
         } else {
             $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
+        }
+
+
+        if( strlen( $row['lib_guide_name'] ) > 0 ){
+            $class_guides[$i][5] = $row['lib_guide_name'];
         }
 
 
@@ -151,10 +160,11 @@ function ccle_redirect_list() {
         }
     } else {
         for ($i=0; $i<count($class_guides); $i++) {
-            $class_guides[$i][4] = l($class_guides[$i][4], $class_guides[$i][4]);
+            $class_guides_names[$i][0] = l($class_guides[$i][5], $class_guides[$i][4]);
 
         }
-        $output = theme('table', array('header' => $header, 'rows' => $class_guides));
+        $output = "More than one guide may be useful for this class. Please select one of the following guides.";
+        $output .= theme('table', array('rows' => $class_guides_names));
         return $output;
     }
 }
@@ -168,7 +178,7 @@ function ccle_redirect_entry_load($entry = array()) {
     $query = db_select('ccle_redirect','u');
     $query
     ->condition('u.subj_area',$entry,'=')
-    ->fields('u',array('pid','term','subj_area','crsidx','classidx','lib_guide'))
+    ->fields('u',array('pid','term','subj_area','crsidx','classidx','lib_guide','lib_guide_name'))
     ->range(0,50);
     $result=$query->execute();
 
