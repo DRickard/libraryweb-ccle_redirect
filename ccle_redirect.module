@@ -98,6 +98,7 @@ function ccle_redirect_list() {
                 }
 
                 if( strlen( $row['crsidx'] ) > 0 ){
+                    krumo($row);
                     if( $row['crsidx'] == $category_submitted[$i] ){
                         if( strlen( $row['classidx'] ) == 0 ){
 //                            if( strlen( $row['term'] ) == 0 ){
@@ -140,7 +141,7 @@ function ccle_redirect_list() {
                     $class_guides[$i][5] = $row['lib_guide_name'];
                 }
             }
-
+exit(0);
             // if only one libguide was submitted, and there is a libguide url from the db, redirect now, skip more processing
             // else
             // keep
