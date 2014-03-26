@@ -117,24 +117,24 @@ function ccle_redirect_list() {
             $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
         }
 
-
         if( strlen( $row['lib_guide_name'] ) > 0 ){
             $class_guides[$i][5] = $row['lib_guide_name'];
         }
 
-
     }
-    // go to redirect or skip this and fall through to build-a-landing page
+      // if only one libguide was submitted, and there is a libguide url from the db, redirect now, skip more processing
+      // else
+      // keep
     if( $lib_guide_count + $always_go_to_landing_page  ==  1 ){
         if( strlen( $class_guides[$i][4] ) > 0 ){
             drupal_goto( $path = $class_guides[$i][4] );
         } else {
-            $error_no_guide = t('No Lib-Guides have been added yet 0.'); // display on _menu page to user
+            drupal_goto( $path = 'http://guides.library.ucla.edu' ); // this may not be needed, below may be enough
         }
     }
 
-  } else {
-        $error_no_guide = t('No Lib-Guides have been added yet 1.'); // display on _menu page to user
+  } else { // else if no matches are found in the database
+      drupal_goto( $path = 'http://guides.library.ucla.edu' ); // this may not be needed, below may be enough
   }
 }
 
@@ -155,9 +155,24 @@ function ccle_redirect_list() {
         if( strlen( $redirect_here ) > 0 ){
             drupal_goto( $path = $redirect_here );
         } else {
-            $error_no_guide = t('No Lib-Guides have been added yet 2.'); // display on _menu page to user
+            drupal_goto( $path = 'http://guides.library.ucla.edu' ); // this may cover most cases
         }
     } else {
+
+
+        // delete any rows with duplicate link to libguide
+        foreach($class_guides as $i => $suba){
+            foreach($class_guides as $i2 => $suba2){
+                if($suba[4]==$suba2[4] && $i!=$i2){
+                    unset($class_guides[$i]);
+                }
+            }
+        }
+
+        // reindex array to set index to be monotonically increasing from zero to max
+        $class_guides = array_values($class_guides);
+
+        // loop through and put link, link title into an array
         for ($i=0; $i<count($class_guides); $i++) {
             $class_guides_names[$i][0] = l($class_guides[$i][5], $class_guides[$i][4]);
 
