@@ -14,6 +14,7 @@
  *  1. Setting the variable '$always_go_to_landing_page=1' will always display the landing page including the
  *   case where only one guide is specified in the incoming link.
  *
+ * 
  * darrowco@library.ucla.edu
  * UCLA Library.
  *
