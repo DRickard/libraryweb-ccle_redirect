@@ -140,7 +140,7 @@ function ccle_redirect_list() {
                     $class_guides[$i][5] = $row['lib_guide_name'];
                 }
             }
-//exit(0);
+
             // if only one libguide was submitted, and there is a libguide url from the db, redirect now, skip more processing
             // else
             // keep
