@@ -82,6 +82,8 @@ function ccle_redirect_list() {
             $rd_class[$i] = '';
             $rd_guide_name[$i] = '';
             foreach ($rows as $row) {
+
+
                 if( $row['term'] == $term_submitted[$i] ){
                     $error_term = '';
                     if( strlen( $row['crsidx'] ) > 0 ){
@@ -90,23 +92,29 @@ function ccle_redirect_list() {
                                 if( $row['classidx'] == $section_submitted[$i] ){
                                     $rd_class[$i] = $row['lib_guide'];
                                 }
-                            } else {
-                                $rd_crs[$i] = $row['lib_guide'];
                             }
                         }
-                    } else {
-                        $rd_subj[$i] = $row['lib_guide'];
                     }
-                } else {
-                $error_term = '';
+                }
+
                 if( strlen( $row['crsidx'] ) > 0 ){
                     if( $row['crsidx'] == $category_submitted[$i] ){
-                        $rd_crs[$i] = $row['lib_guide'];
+                        if( strlen( $row['classidx'] ) == 0 ){
+//                            if( strlen( $row['term'] ) == 0 ){
+                                $rd_crs[$i] = $row['lib_guide'];
+//                            }
+                        }
                     }
-                } else {
-                    $rd_subj[$i] = $row['lib_guide'];
                 }
-            }
+
+                if( strlen( $row['crsidx'] ) == 0 ){
+                    if( strlen( $row['classidx'] ) == 0 ){
+//                        if( strlen( $row['term'] ) == 0 ){
+                            $rd_subj[$i] = $row['lib_guide'];
+//                        }
+                    }
+
+                }
 
                 if( strlen( $rd_class[$i] ) > 0 || strlen( $rd_crs[$i] ) > 0 || strlen( $rd_subj[$i] ) > 0 ){
                     $class_guides[$i][0] = $term_submitted[$i];
@@ -124,14 +132,15 @@ function ccle_redirect_list() {
                 } elseif ( strlen( $rd_subj[$i] ) > 0 ) {
                     $class_guides[$i][4] = $rd_subj[$i];
                 } else {
-                    $error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
+//                    drupal_goto( $path = 'http://guides.library.ucla.edu' ); // this may not be needed, below may be enough
+                    //$error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
                 }
 
                 if( strlen( $row['lib_guide_name'] ) > 0 ){
                     $class_guides[$i][5] = $row['lib_guide_name'];
                 }
-
             }
+//exit(0);
             // if only one libguide was submitted, and there is a libguide url from the db, redirect now, skip more processing
             // else
             // keep
