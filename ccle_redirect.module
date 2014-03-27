@@ -46,7 +46,7 @@ function ccle_redirect_list() {
     $subject_submitted = array();
     $category_submitted = array();
     $section_submitted = array();
-    $class_guides = array();
+    $class_guides = array(array());
     $class_guides_names = array();
     $output = '';
 
@@ -98,7 +98,6 @@ function ccle_redirect_list() {
                 }
 
                 if( strlen( $row['crsidx'] ) > 0 ){
-                    krumo($row);
                     if( $row['crsidx'] == $category_submitted[$i] ){
                         if( strlen( $row['classidx'] ) == 0 ){
 //                            if( strlen( $row['term'] ) == 0 ){
@@ -111,18 +110,33 @@ function ccle_redirect_list() {
                 if( strlen( $row['crsidx'] ) == 0 ){
                     if( strlen( $row['classidx'] ) == 0 ){
 //                        if( strlen( $row['term'] ) == 0 ){
+                          if( strlen( $rd_subj[$i] ) == 0 ){
                             $rd_subj[$i] = $row['lib_guide'];
+                          } else{
+                              $rd_subj[$i] .= '899DC1AEAF63D2B20B4810CD1A5816BB1DDAE16847AE00B9656246C3CB33A624';
+                              $rd_subj[$i] .= $row['lib_guide'];
+                              $always_go_to_landing_page+=1;
+                          }
 //                        }
                     }
 
                 }
 
-                if( strlen( $rd_class[$i] ) > 0 || strlen( $rd_crs[$i] ) > 0 || strlen( $rd_subj[$i] ) > 0 ){
-                    $class_guides[$i][0] = $term_submitted[$i];
-                    $class_guides[$i][1] = $subject_submitted[$i];
-                    $class_guides[$i][2] = $category_submitted[$i];
-                    $class_guides[$i][3] = $section_submitted[$i];
-                }
+//                if (preg_match("/899DC1AEAF63D2B20B4810CD1A5816BB1DDAE16847AE00B9656246C3CB33A624/", $rd_subj[$i])) {
+//                    if( strlen( $rd_class[$i] ) > 0 || strlen( $rd_crs[$i] ) > 0 || strlen( $rd_subj[$i] ) > 0 ){
+//                        $class_guides[$i][0] .= '899DC1AEAF63D2B20B4810CD1A5816BB1DDAE16847AE00B9656246C3CB33A624'.$term_submitted[$i];
+//                        $class_guides[$i][1] .= '899DC1AEAF63D2B20B4810CD1A5816BB1DDAE16847AE00B9656246C3CB33A624'.$subject_submitted[$i];
+//                        $class_guides[$i][2] .= '899DC1AEAF63D2B20B4810CD1A5816BB1DDAE16847AE00B9656246C3CB33A624'.$category_submitted[$i];
+//                        $class_guides[$i][3] .= '899DC1AEAF63D2B20B4810CD1A5816BB1DDAE16847AE00B9656246C3CB33A624'.$section_submitted[$i];
+//                    }
+//                } else {
+                    if( strlen( $rd_class[$i] ) > 0 || strlen( $rd_crs[$i] ) > 0 || strlen( $rd_subj[$i] ) > 0 ){
+                        $class_guides[$i][0] = $term_submitted[$i];
+                        $class_guides[$i][1] = $subject_submitted[$i];
+                        $class_guides[$i][2] = $category_submitted[$i];
+                        $class_guides[$i][3] = $section_submitted[$i];
+                    }
+//                }
 
                 // cycle through redirect_subj, crs and class and branch accordingly
                 // Position after populating the lower array elements
@@ -137,11 +151,23 @@ function ccle_redirect_list() {
                     //$error_no_guide = t('No Lib-Guides have been added yet.'); // display on _menu page to user
                 }
 
-                if( strlen( $row['lib_guide_name'] ) > 0 ){
-                    $class_guides[$i][5] = $row['lib_guide_name'];
+                if( isset( $class_guides[$i][5] ) ){
+                    if( strlen( $class_guides[$i][5] ) == 0 ){
+                        if( strlen( $row['lib_guide_name'] ) > 0 ){
+                            $class_guides[$i][5] = $row['lib_guide_name'];
+                        }
+                    } else {
+                        if( strlen( $row['lib_guide_name'] ) > 0 ){
+                        $class_guides[$i][5] .= '899DC1AEAF63D2B20B4810CD1A5816BB1DDAE16847AE00B9656246C3CB33A624'.$row['lib_guide_name'];
+                        }
+                    }
+                } else {
+                    if( strlen( $row['lib_guide_name'] ) > 0 ){
+                        $class_guides[$i][5] = $row['lib_guide_name'];
+                    }
                 }
             }
-exit(0);
+
             // if only one libguide was submitted, and there is a libguide url from the db, redirect now, skip more processing
             // else
             // keep
@@ -158,6 +184,9 @@ exit(0);
         }
     }
 
+    if (preg_match("/899DC1AEAF63D2B20B4810CD1A5816BB1DDAE16847AE00B9656246C3CB33A624/", $class_guides[0][4])) {
+        $go_redirect = 0;
+    } else {
     $go_redirect = 1;
     $nm1 = '';
     $redirect_here = '';
@@ -171,6 +200,8 @@ exit(0);
         }
         $nm1 = $class_guide[4];
     }
+    }
+
     if($go_redirect == 1 ){
         if( strlen( $redirect_here ) > 0 ){
             drupal_goto( $path = $redirect_here );
@@ -192,11 +223,24 @@ exit(0);
         // reindex array to set index to be monotonically increasing from zero to max
         $class_guides = array_values($class_guides);
 
-        // loop through and put link, link title into an array
-        for ($i=0; $i<count($class_guides); $i++) {
-            $class_guides_names[$i][0] = l($class_guides[$i][5], $class_guides[$i][4]);
-
+        if (preg_match("/899DC1AEAF63D2B20B4810CD1A5816BB1DDAE16847AE00B9656246C3CB33A624/", $class_guides[0][4])) {
+            // loop through and check for one subject. two guides
+            $split_urls = explode("899DC1AEAF63D2B20B4810CD1A5816BB1DDAE16847AE00B9656246C3CB33A624", $class_guides[0][4]);
+            $split_names = explode("899DC1AEAF63D2B20B4810CD1A5816BB1DDAE16847AE00B9656246C3CB33A624", $class_guides[0][5]);
+            $i = 0;
+            foreach( $split_urls as $split_url){
+                $class_guides_names[$i][0] = l($split_names[$i], $split_urls[$i]);
+                $i+=1;
+            }
+        } else {
+            // loop through and put link, link title into an array
+            for ($i=0; $i<count($class_guides); $i++) {
+                $class_guides_names[$i][0] = l($class_guides[$i][5], $class_guides[$i][4]);
+            }
         }
+
+
+
         $output = "More than one guide may be useful for this class. Please select one of the following guides.";
         $output .= theme('table', array('rows' => $class_guides_names));
         return $output;
