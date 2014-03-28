@@ -313,8 +313,8 @@ function ccle_redirect_install() {
     'subj_area' => 'BIOINFO',
     'crsidx'     => '',
     'classidx'     => '',
-    'lib_guide'     => '',
-    'lib_guide_name'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/biostats',
+    'lib_guide_name'     => 'Biostatistics',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -325,8 +325,8 @@ function ccle_redirect_install() {
     'subj_area' => 'BIOINFR',
     'crsidx'     => '',
     'classidx'     => '',
-    'lib_guide'     => '',
-    'lib_guide_name'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/biostats',
+    'lib_guide_name'     => 'Biostatistics',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -1309,8 +1309,8 @@ function ccle_redirect_install() {
     'subj_area' => 'MGMT',
     'crsidx'     => '',
     'classidx'     => '',
-    'lib_guide'     => 'http://guides.library.ucla.edu/business-guides',
-    'lib_guide_name'     => 'Business and Management',
+    'lib_guide'     => 'http://www.anderson.ucla.edu/rosenfeld-library',
+    'lib_guide_name'     => 'Rosenfeld Library',
   );
   db_insert('ccle_redirect')
     ->fields($fields)
@@ -2282,6 +2282,18 @@ function ccle_redirect_install() {
     'crsidx'     => '0030CL',
     'classidx'     => '',
     'lib_guide'     => 'http://guides.library.ucla.edu/chem30cl',
+    'lib_guide_name'     => '',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'COMMST',
+    'crsidx'     => '0102',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/CommStud102',
     'lib_guide_name'     => '',
   );
   db_insert('ccle_redirect')
@@ -3394,6 +3406,30 @@ function ccle_redirect_install() {
 
     $fields = array(
     'term'    => '14W',
+    'subj_area' => 'MGMT',
+    'crsidx'     => '0292BM',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/patents',
+    'lib_guide_name'     => '',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
+    'subj_area' => 'PUBPLC',
+    'crsidx'     => '0280BM',
+    'classidx'     => '',
+    'lib_guide'     => 'http://guides.library.ucla.edu/patents',
+    'lib_guide_name'     => '',
+  );
+  db_insert('ccle_redirect')
+    ->fields($fields)
+    ->execute();
+
+    $fields = array(
+    'term'    => '14W',
     'subj_area' => 'HIST',
     'crsidx'     => '0097C',
     'classidx'     => '001',
@@ -3590,18 +3626,6 @@ function ccle_redirect_install() {
     'crsidx'     => '0003',
     'classidx'     => '038',
     'lib_guide'     => 'http://guides.library.ucla.edu/english3/westbay',
-    'lib_guide_name'     => '',
-  );
-  db_insert('ccle_redirect')
-    ->fields($fields)
-    ->execute();
-
-    $fields = array(
-    'term'    => '14W',
-    'subj_area' => 'ENGCOMP',
-    'crsidx'     => '0003',
-    'classidx'     => '001',
-    'lib_guide'     => 'http://guides.library.ucla.edu/engcomp3-chichester-test',
     'lib_guide_name'     => '',
   );
   db_insert('ccle_redirect')
